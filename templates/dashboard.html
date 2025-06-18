@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACDC Security Suite - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --secondary-gradient: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --warning-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --danger-gradient: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --card-border: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --glow-primary: 0 0 20px rgba(99, 102, 241, 0.3);
+            --glow-success: 0 0 20px rgba(16, 185, 129, 0.3);
+            --glow-warning: 0 0 20px rgba(245, 158, 11, 0.3);
+            --glow-danger: 0 0 20px rgba(239, 68, 68, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .bg-animated {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+            animation: backgroundShift 15s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { transform: translateX(0px) translateY(0px); }
+            25% { transform: translateX(-20px) translateY(-20px); }
+            50% { transform: translateX(20px) translateY(-20px); }
+            75% { transform: translateX(-20px) translateY(20px); }
+        }
+
+        /* Header */
+        .navbar {
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .navbar-brand i {
+            color: #6366f1;
+            margin-right: 0.5rem;
+        }
+
+        /* Module Cards */
+        .module-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .module-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), var(--glow-primary);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .module-card.active {
+            box-shadow: var(--glow-success);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        .module-card.active::before {
+            background: var(--success-gradient);
+            transform: scaleX(1);
+        }
+
+        .module-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .module-card:hover .module-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .module-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .module-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .module-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-badge.running {
+            background: var(--success-gradient);
+            color: white;
+            box-shadow: var(--glow-success);
+        }
+
+        .status-badge.stopped {
+            background: rgba(100, 116, 139, 0.2);
+            color: var(--text-muted);
+            border: 1px solid var(--card-border);
+        }
+
+        .status-badge i {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-control {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-control::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-control:hover::before {
+            left: 100%;
+        }
+
+        .btn-start {
+            background: var(--success-gradient);
+            color: white;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-stop {
+            background: var(--danger-gradient);
+            color: white;
+        }
+
+        .btn-stop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .uptime {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Log Section */
+        .log-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .log-filters {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--card-border);
+        }
+
+        .log-search {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: var(--text-primary);
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .log-search:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-filter {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--card-border);
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-filter:hover, .btn-filter.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid var(--card-border);
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-tabs .nav-link {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 1rem 1.5rem;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-tabs .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-tabs .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        .nav-tabs .nav-link.active {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--text-primary);
+            border-color: transparent;
+        }
+
+        .log-container {
+            height: 500px;
+            overflow-y: auto;
+            background: rgba(10, 15, 26, 0.95);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            position: relative;
+            color: var(--text-primary);
+        }
+
+        .log-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .log-container::-webkit-scrollbar-track {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 4px;
+        }
+
+        .log-container::-webkit-scrollbar-thumb {
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+
+        /* Update log styling */
+        .log-entry {
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            background: rgba(15, 23, 42, 0.4);
+            border-left: 3px solid transparent;
+            font-family: 'SF Mono', Consolas, monospace;
+            transition: all 0.3s ease;
+        }
+
+        .log-entry:hover {
+            background: rgba(15, 23, 42, 0.6);
+            border-left-color: #6366f1;
+        }
+
+        .log-timestamp {
+            color: #94a3b8;
+            font-weight: 500;
+            margin-right: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .log-service {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .log-connection {
+            color: #67e8f9;
+            font-size: 0.85rem;
+            margin-right: 1rem;
+        }
+
+        .log-message {
+            color: #e2e8f0;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .log-data {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            color: #6ee7b7;
+            font-size: 0.85rem;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        /* Utilities */
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .module-card {
+                padding: 1.5rem;
+            }
+            
+            .control-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn-control {
+                width: 100%;
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+        }
+
+        /* Custom animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            color: var(--text-primary);
+            z-index: 1000;
+            animation: slideInRight 0.3s ease;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .log-json-content {
+            margin-top: 0.25rem;
+            padding: 0.25rem 0;
+            line-height: 1.4;
+        }
+        
+        .log-json-key {
+            color: #67e8f9;
+            font-weight: 600;
+            margin-right: 0.25rem;
+        }
+        
+        .log-json-value {
+            color: #fcd34d;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animated"></div>
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <i class="fas fa-shield-alt"></i>
+                ACDC Security Suite
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="text-muted me-3" id="system-time"></span>
+                <div class="status-indicator" id="connection-status">
+                    <i class="fas fa-circle text-success"></i>
+                    <span class="ms-1">Connected</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <!-- Module Control Cards -->
+        <div class="row mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="module-card fade-in" id="endpoint-card">
+                    <div class="module-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h5 class="module-title">Endpoint Monitor</h5>
+                    <p class="module-description">
+                        Advanced file system monitoring with real-time threat detection and behavioral analysis
+                    </p>
+                    <div class="module-controls">
+                        <div>
+                            <span id="endpoint-status" class="status-badge stopped">
+                                <i class="fas fa-circle"></i>
+                                Stopped
+                            </span>
+                            <div id="endpoint-uptime" class="uptime"></div>
+                        </div>
+                        <div class="control-buttons">
+                            <button onclick="startModule('endpoint')" class="btn-control btn-start">
+                                <i class="fas fa-play me-1"></i>Start
+                            </button>
+                            <button onclick="stopModule('endpoint')" class="btn-control btn-stop">
+                                <i class="fas fa-stop me-1"></i>Stop
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="module-card fade-in" id="honeypot-card" style="animation-delay: 0.1s;">
+                    <div class="module-icon" style="background: var(--warning-gradient);">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h5 class="module-title">Honeypot</h5>
+                    <p class="module-description">
+                        Intelligent network service simulation to detect and analyze sophisticated attack patterns
+                    </p>
+                    <div class="module-controls">
+                        <div>
+                            <span id="honeypot-status" class="status-badge stopped">
+                                <i class="fas fa-circle"></i>
+                                Stopped
+                            </span>
+                            <div id="honeypot-uptime" class="uptime"></div>
+                        </div>
+                        <div class="control-buttons">
+                            <button onclick="startModule('honeypot')" class="btn-control btn-start">
+                                <i class="fas fa-play me-1"></i>Start
+                            </button>
+                            <button onclick="stopModule('honeypot')" class="btn-control btn-stop">
+                                <i class="fas fa-stop me-1"></i>Stop
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="module-card fade-in" id="network-card" style="animation-delay: 0.2s;">
+                    <div class="module-icon" style="background: var(--secondary-gradient);">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h5 class="module-title">Network Monitor</h5>
+                    <p class="module-description">
+                        Deep packet inspection and network traffic analysis with AI-powered intrusion detection
+                    </p>
+                    <div class="module-controls">
+                        <div>
+                            <span id="network-status" class="status-badge stopped">
+                                <i class="fas fa-circle"></i>
+                                Stopped
+                            </span>
+                            <div id="network-uptime" class="uptime"></div>
+                        </div>
+                        <div class="control-buttons">
+                            <button onclick="startModule('network')" class="btn-control btn-start">
+                                <i class="fas fa-play me-1"></i>Start
+                            </button>
+                            <button onclick="stopModule('network')" class="btn-control btn-stop">
+                                <i class="fas fa-stop me-1"></i>Stop
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Log Section -->
+        <div class="log-section fade-in" style="animation-delay: 0.3s;">
+            <h4 class="mb-4">
+                <i class="fas fa-terminal me-2"></i>
+                Security Event Logs
+            </h4>
+            
+            <!-- Log Filters -->
+            <div class="log-filters">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="position-relative">
+                            <i class="fas fa-search position-absolute" style="left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+                            <input type="text" id="log-search" class="log-search ps-5" placeholder="Search security events...">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="filter-buttons">
+                                <button class="btn-filter active" onclick="filterLogLevel('all')">All Events</button>
+                                <button class="btn-filter" onclick="filterLogLevel('INFO')">
+                                    <i class="fas fa-info-circle me-1"></i>Info
+                                </button>
+                                <button class="btn-filter" onclick="filterLogLevel('WARNING')">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Warning
+                                </button>
+                                <button class="btn-filter" onclick="filterLogLevel('ERROR')">
+                                    <i class="fas fa-times-circle me-1"></i>Error
+                                </button>
+                                <button class="btn-filter" onclick="filterLogLevel('CRITICAL')">
+                                    <i class="fas fa-exclamation-circle me-1"></i>Critical
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <button class="btn-filter" onclick="clearLogs()">
+                                    <i class="fas fa-trash me-1"></i>Clear
+                                </button>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="autoScroll" checked>
+                                    <label class="form-check-label text-muted" for="autoScroll">Auto-scroll</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Log Tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#endpoint-logs">
+                        <i class="fas fa-desktop me-2"></i>Endpoint Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#honeypot-logs">
+                        <i class="fas fa-bug me-2"></i>Honeypot Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#network-logs">
+                        <i class="fas fa-network-wired me-2"></i>Network Analysis
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-3">
+                <div id="endpoint-logs" class="tab-pane active">
+                    <div class="log-container" id="endpoint-log-container">
+                        <div class="text-center text-muted py-4">
+                            <i class="fas fa-desktop fa-2x mb-2"></i>
+                            <p>Endpoint monitoring logs will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="honeypot-logs" class="tab-pane fade">
+                    <div class="log-container" id="honeypot-log-container">
+                        <div class="text-center text-muted py-4">
+                            <i class="fas fa-bug fa-2x mb-2"></i>
+                            <p>Honeypot activity logs will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="network-logs" class="tab-pane fade">
+                    <div class="log-container" id="network-log-container">
+                        <div class="text-center text-muted py-4">
+                            <i class="fas fa-network-wired fa-2x mb-2"></i>
+                            <p>Network analysis logs will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        // Initialize websocket connection with retry
+        let socket;
+        let retryCount = 0;
+        const maxRetries = 5;
+
+        function connectWebSocket() {
+            socket = io();
+
+            socket.on('connect', function() {
+                showNotification('Connected to server', 'success');
+                document.getElementById('connection-status').innerHTML = 
+                    '<i class="fas fa-circle text-success"></i><span class="ms-1">Connected</span>';
+                retryCount = 0;
+            });
+
+            socket.on('disconnect', function() {
+                document.getElementById('connection-status').innerHTML = 
+                    '<i class="fas fa-circle text-danger"></i><span class="ms-1">Disconnected</span>';
+                if (retryCount < maxRetries) {
+                    setTimeout(connectWebSocket, 2000);
+                    retryCount++;
+                }
+            });
+
+            socket.on('log_event', function(data) {
+                appendLog(data.module, data.message, data.level, data.timestamp);
+            });
+
+            socket.on('module_states', function(states) {
+                for (const [module, state] of Object.entries(states)) {
+                    updateModuleStatus(module, state.running);
+                }
+            });
+        }
+
+        // Load and display logs
+        function loadModuleLogs(module) {
+            const container = document.getElementById(`${module}-log-container`);
+            if (!container) return;
+
+            container.innerHTML = '<div class="text-center"><div class="loading-spinner"></div> Loading logs...</div>';
+
+            fetch(`/api/logs/${module}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        // Remove or comment out the error message display
+                        // container.innerHTML = `<div class="text-danger p-3">Error: ${data.error}</div>`;
+                        container.innerHTML = '<div class="text-muted p-3">No logs available</div>';
+                        return;
+                    }
+
+                    container.innerHTML = '';
+                    if (data.logs && data.logs.length > 0) {
+                        data.logs.forEach(log => {
+                            const level = log.level || 'INFO';
+                            const message = typeof log.message === 'string' ? 
+                                log.message : JSON.stringify(log, null, 2);
+                            appendLog(module, message, level, log.timestamp);
+                        });
+                        
+                        if (document.getElementById('autoScroll').checked) {
+                            container.scrollTop = container.scrollHeight;
+                        }
+                    } else {
+                        container.innerHTML = '<div class="text-muted p-3">No logs available</div>';
+                    }
+                })
+                .catch(error => {
+                    container.innerHTML = `<div class="text-danger p-3">Failed to load logs: ${error}</div>`;
+                });
+        }
+
+        // Initialize
+        connectWebSocket();
+        updateSystemTime();
+        
+        // Load initial logs for active tab
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeTab = document.querySelector('.nav-link.active');
+            const module = activeTab.getAttribute('href').split('-')[0].substring(1);
+            loadModuleLogs(module);
+        });
+
+        // Refresh logs every 30 seconds
+        setInterval(() => {
+            const activeTab = document.querySelector('.nav-link.active');
+            const module = activeTab.getAttribute('href').split('-')[0].substring(1);
+            loadModuleLogs(module);
+        }, 30000);
+
+        // Update system time
+        function updateSystemTime() {
+            const now = new Date();
+            document.getElementById('system-time').textContent = now.toLocaleString();
+        }
+        setInterval(updateSystemTime, 1000);
+
+        // Module control functions
+        function startModule(module) {
+            const button = event.target;
+            button.innerHTML = '<span class="loading-spinner me-1"></span>Starting...';
+            button.disabled = true;
+            
+            fetch(`/api/start/${module}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        showNotification(`${module} module started`, 'success');
+                        updateModuleStatus(module, true);
+                    } else {
+                        showNotification(data.message || 'Failed to start module', 'error');
+                    }
+                    button.innerHTML = '<i class="fas fa-play me-1"></i>Start';
+                    button.disabled = false;
+                });
+        }
+
+        function stopModule(module) {
+            const button = event.target;
+            button.innerHTML = '<span class="loading-spinner me-1"></span>Stopping...';
+            button.disabled = true;
+            
+            fetch(`/api/stop/${module}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        showNotification(`${module} module stopped`, 'success');
+                        updateModuleStatus(module, false);
+                    } else {
+                        showNotification(data.message || 'Failed to stop module', 'error');
+                    }
+                    button.innerHTML = '<i class="fas fa-stop me-1"></i>Stop';
+                    button.disabled = false;
+                });
+        }
+
+        // UI helper functions
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check' : 'info'}-circle me-2"></i>
+                ${message}
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideInRight 0.3s ease reverse';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        function appendLog(module, message, level, timestamp = null) {
+            const container = document.getElementById(`${module}-log-container`);
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+
+            let formattedMessage = '';
+            let logData = null;
+
+            // Try to parse as JSON if possible
+            if (typeof message === 'string' && message.trim().startsWith('{')) {
+                try {
+                    logData = JSON.parse(message);
+
+                    // Helper to capitalize first letter
+                    function cap(s) {
+                        if (!s || typeof s !== 'string') return '';
+                        return s.charAt(0).toUpperCase() + s.slice(1);
+                    }
+
+                    // Remove unwanted characters from data field
+                    let cleanData = logData.data;
+                    if (typeof cleanData === 'string') {
+                        cleanData = cleanData.replace(/\\r\\n|\\n|\\r/g, '');
+                    }
+
+                    // Build each field on a new line, no quotes, capitalized, and each field after comma in new line
+                    let lines = [];
+                    if (logData.timestamp)
+                        lines.push(`<span class="log-json-key">Timestamp:</span> <span class="log-json-value">${logData.timestamp.replace(/"/g, '')}</span>`);
+                    if (logData.service)
+                        lines.push(`<span class="log-json-key">Service:</span> <span class="log-json-value">${cap(logData.service.replace(/"/g, ''))}</span>`);
+                    if (logData.client_ip)
+                        lines.push(`<span class="log-json-key">Client_ip:</span> <span class="log-json-value">${logData.client_ip.replace(/"/g, '')}</span>`);
+                    if (logData.client_port)
+                        lines.push(`<span class="log-json-key">Client_port:</span> <span class="log-json-value">${logData.client_port}</span>`);
+                    if (cleanData)
+                        lines.push(`<span class="log-json-key">Data:</span> <span class="log-json-value">${cleanData.replace(/"/g, '')}</span>`);
+                    if (logData.event_type)
+                        lines.push(`<span class="log-json-key">Event_type:</span> <span class="log-json-value">${cap(logData.event_type.replace(/"/g, ''))}</span>`);
+
+                    // Join with <br> and ensure each field is on a new line after comma
+                    formattedMessage = `
+                        <span class="log-timestamp">${logData.formatted_time || timestamp || new Date().toLocaleTimeString()}</span>
+                        <div class="log-json-content" style="white-space:pre-line;">
+                            ${lines.join(',<br>')}
+                        </div>
+                    `;
+                } catch {
+                    // Fallback to plain text if JSON parse fails
+                    formattedMessage = `
+                        <span class="log-timestamp">${timestamp || new Date().toLocaleTimeString()}</span>
+                        <span class="log-message">${message.replace(/[{}"]/g, '').replace(/\\/g, '')}</span>
+                    `;
+                }
+            } else {
+                // Not JSON, treat as plain text and remove curly brackets, slashes, and quotes
+                formattedMessage = `
+                    <span class="log-timestamp">${timestamp || new Date().toLocaleTimeString()}</span>
+                    <span class="log-message">${String(message).replace(/[{}"]/g, '').replace(/\\/g, '')}</span>
+                `;
+            }
+
+            entry.innerHTML = formattedMessage;
+            container.appendChild(entry);
+
+            if (document.getElementById('autoScroll').checked) {
+                entry.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function updateModuleStatus(module, running) {
+            const statusBadge = document.getElementById(`${module}-status`);
+            const moduleCard = document.getElementById(`${module}-card`);
+            
+            if (running) {
+                statusBadge.className = 'status-badge running';
+                statusBadge.innerHTML = '<i class="fas fa-circle"></i> Running';
+                moduleCard.classList.add('active');
+            } else {
+                statusBadge.className = 'status-badge stopped';
+                statusBadge.innerHTML = '<i class="fas fa-circle"></i> Stopped';
+                moduleCard.classList.remove('active');
+            }
+        }
+
+        // Initialize
+        updateSystemTime();
+    </script>
+</body>
+</html>

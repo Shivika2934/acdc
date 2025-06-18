@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2025-06-18T14:17:31.363857",
+    "service": "SSH",
+    "client_ip": "127.0.0.1",
+    "client_port": 65283,
+    "data": "Banner sent: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5",
+    "event_type": "connection"
+  },
+  {
+    "timestamp": "2025-06-18T14:17:31.367072",
+    "service": "SSH",
+    "client_ip": "127.0.0.1",
+    "client_port": 65283,
+    "data": "SSH-2.0-OpenSSH_for_Windows_9.5\r\n",
+    "event_type": "connection"
+  }
+]
