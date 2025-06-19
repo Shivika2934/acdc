@@ -8,16 +8,22 @@ import threading
 import queue
 import json
 import time
+import string
 import os
 import signal
 import sys
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+
+
 # Import our modules
 import endpoint
 import honeypot
 import network
+from cryptanalysis import xor_encrypt, xor_decrypt, monoalpha_encrypt, monoalpha_decrypt, validate_alphabet
+
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key'
@@ -27,7 +33,8 @@ socketio = SocketIO(app)
 module_states = {
     'endpoint': {'running': False, 'instance': None, 'log_queue': queue.Queue()},
     'honeypot': {'running': False, 'instance': None, 'log_queue': queue.Queue()},
-    'network': {'running': False, 'instance': None, 'log_queue': queue.Queue()}
+    'network': {'running': False, 'instance': None, 'log_queue': queue.Queue()},
+    'cryptanalysis': {'running': False, 'instance': None, 'log_queue': queue.Queue()}
 }
 
 # Update LOG_FILES dictionary
@@ -170,7 +177,8 @@ class DashboardManager:
         self.modules = {
             'endpoint': ModuleState(False, None),
             'network': ModuleState(False, None),
-            'honeypot': ModuleState(False, None)
+            'honeypot': ModuleState(False, None),
+            'cryptanalysis': ModuleState(False, None)
         }
     
     def update_module_state(self, module: str, running: bool):
@@ -357,6 +365,51 @@ def get_module_logs(module):
             
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)})
+@app.route('/cryptanalysis', methods=['GET', 'POST'])
+def cryptanalysis_console():
+    result = None
+
+    if request.method == 'POST':
+        method = request.form['method']
+        mode = request.form['mode']
+        key = request.form['key']
+        message = request.form['message']
+
+        if method == 'xor':
+            try:
+                if mode == 'encrypt':
+                    result = xor_encrypt(message, key, output_encoding='base64')
+                else:
+                    result = xor_decrypt(message, key, input_encoding='base64')
+            except Exception as e:
+                result = f"Error: {str(e)}"
+
+        elif method == 'mono':
+            if not validate_alphabet(key):
+                result = "Error: Invalid monoalphabetic key! Must be 26 unique lowercase letters."
+            else:
+                try:
+                    if mode == 'encrypt':
+                        key_map = dict(zip(string.ascii_lowercase, key))
+                        result = monoalpha_encrypt(message, key_map)
+                    else:
+                        reverse_key_map = dict(zip(key, string.ascii_lowercase))
+                        result = monoalpha_decrypt(message, reverse_key_map)
+                except Exception as e:
+                    result = f"Error: {str(e)}"
+        else:
+            result = "Invalid cipher method selected."
+
+        # Log result if valid
+        if result and not result.startswith("Error"):
+            with open('crypto_audit.log', 'a') as log_file:
+                log_file.write(
+                    f"{datetime.now().isoformat()} - {mode.upper()} - {method.upper()} - "
+                    f"Key: {key} - Message: {message} - Result: {result}\n"
+                )
+
+    return render_template('cryptanalysis.html', result=result)
+
 
 def signal_handler(sig, frame):
     """Handle graceful shutdown"""

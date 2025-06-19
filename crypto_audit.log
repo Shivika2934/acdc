@@ -1,0 +1,39 @@
+2025-06-19 23:19:13,829 - WARNING -  * Debugger is active!
+2025-06-19 23:19:13,857 - INFO -  * Debugger PIN: 115-611-976
+2025-06-19 23:19:13,893 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:13] "GET / HTTP/1.1" 200 -
+2025-06-19 23:19:15,512 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:15] "GET /api/logs/endpoint HTTP/1.1" 200 -
+2025-06-19 23:19:15,536 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:15] "GET /socket.io/?EIO=4&transport=polling&t=PU9JoEC HTTP/1.1" 200 -
+2025-06-19 23:19:15,904 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:15] "POST /socket.io/?EIO=4&transport=polling&t=PU9JoUx&sid=OzUkb9jolHw0fh7aAAAA HTTP/1.1" 200 -
+2025-06-19 23:19:15,930 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:15] "GET /socket.io/?EIO=4&transport=polling&t=PU9JoV5&sid=OzUkb9jolHw0fh7aAAAA HTTP/1.1" 200 -
+2025-06-19 23:19:19,818 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:19] "GET /socket.io/?EIO=4&transport=polling&t=PU9JpR0&sid=OzUkb9jolHw0fh7aAAAA HTTP/1.1" 200 -
+2025-06-19 23:19:21,872 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:21] "GET /socket.io/?EIO=4&transport=websocket&sid=OzUkb9jolHw0fh7aAAAA HTTP/1.1" 200 -
+2025-06-19 23:19:21,946 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:21] "GET /cryptanalysis HTTP/1.1" 200 -
+2025-06-19 23:19:51,064 - INFO - Starting XOR encryption.
+2025-06-19 23:19:51,064 - INFO - Sanitizing input text...
+2025-06-19 23:19:51,082 - INFO - No sanitization needed.
+2025-06-19 23:19:51,083 - INFO - XOR encryption completed. Plaintext length: 15 bytes.
+2025-06-19 23:19:51,083 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:51] "POST /cryptanalysis HTTP/1.1" 200 -
+2025-06-19 23:19:58,883 - INFO - Starting XOR decryption.
+2025-06-19 23:19:58,884 - INFO - Sanitizing input text...
+2025-06-19 23:19:58,884 - INFO - No sanitization needed.
+2025-06-19 23:19:58,885 - INFO - XOR decryption completed successfully.
+2025-06-19 23:19:58,890 - INFO - 127.0.0.1 - - [19/Jun/2025 23:19:58] "POST /cryptanalysis HTTP/1.1" 200 -
+2025-06-19 23:20:03,315 - INFO - Starting XOR decryption.
+2025-06-19 23:20:03,316 - INFO - Sanitizing input text...
+2025-06-19 23:20:03,316 - INFO - Punctuation removed from input.
+2025-06-19 23:20:03,316 - INFO - Sanitization complete. Changes were made.
+2025-06-19 23:20:03,316 - INFO - XOR decryption completed successfully.
+2025-06-19 23:20:03,320 - INFO - 127.0.0.1 - - [19/Jun/2025 23:20:03] "POST /cryptanalysis HTTP/1.1" 200 -
+2025-06-19 23:21:02,348 - INFO - Starting XOR decryption.
+2025-06-19 23:21:02,348 - INFO - Sanitizing input text...
+2025-06-19 23:21:02,349 - INFO - No sanitization needed.
+2025-06-19 23:21:02,349 - INFO - XOR decryption completed successfully.
+2025-06-19 23:21:02,355 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:02] "POST /cryptanalysis HTTP/1.1" 200 -
+2025-06-19 23:21:37,339 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:37] "GET / HTTP/1.1" 200 -
+2025-06-19 23:21:37,891 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:37] "GET /api/logs/endpoint HTTP/1.1" 200 -
+2025-06-19 23:21:37,901 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:37] "GET /socket.io/?EIO=4&transport=polling&t=PU9KLAB HTTP/1.1" 200 -
+2025-06-19 23:21:38,279 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:38] "POST /socket.io/?EIO=4&transport=polling&t=PU9KLFC&sid=6fRyLOUjHrKOIYrWAAAC HTTP/1.1" 200 -
+2025-06-19 23:21:38,381 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:38] "GET /socket.io/?EIO=4&transport=polling&t=PU9KLFJ&sid=6fRyLOUjHrKOIYrWAAAC HTTP/1.1" 200 -
+2025-06-19 23:21:41,442 - INFO - 127.0.0.1 - - [19/Jun/2025 23:21:41] "GET /socket.io/?EIO=4&transport=polling&t=PU9KM0O&sid=6fRyLOUjHrKOIYrWAAAC HTTP/1.1" 200 -
+2025-06-19 23:22:08,581 - INFO - 127.0.0.1 - - [19/Jun/2025 23:22:08] "GET /api/logs/endpoint HTTP/1.1" 200 -
+2025-06-19 23:22:24,087 - INFO - 127.0.0.1 - - [19/Jun/2025 23:22:24] "GET /socket.io/?EIO=4&transport=websocket&sid=6fRyLOUjHrKOIYrWAAAC HTTP/1.1" 200 -
