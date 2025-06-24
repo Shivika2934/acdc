@@ -9056,5 +9056,1377 @@
       "payload_hash": "caeaea02001f9c3a66a1bc892868ea7e",
       "payload_preview": "gqndq2;w?w/;9{qo\u001e\r\u05111ag\u060a0,5(u\u001a$\u001f%\u0213\"p\u0704a\u009a10c2wc!c*]m\u0000\u0010\u001a\u000bf`-=y\u0014cm\u00100\u001d:3\u0002d\n|\r3at#\u0002ro~({#y+\u03bcc\u0019ii4n\u0011p\u051dn.~o\u001b\u0011sg6hvr\u001e\u0001.b\u000blb\rc.)tvi\u000bm)y\u07des\u0004+m\u0000h5:0\u0003^g.\\\u0019_\u0016}xvvb\u000emq)-\u0016]\"\u00130ya\"\u00190r\f\u0006ef>~\u057b\u000equ\u0387cd5>wq\u045e>*\f\u0007[v\u0004[ab7\u0001?6\u000ef:\u05ab8"
     }
+  },
+  {
+    "timestamp": "2025-06-23T14:31:43.382179",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "34.199.141.133",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "794d6ff26f8416f4155ca60b4187e127",
+      "payload_preview": "\u0016\u0003\u0001\u0007s\u0001\u0000\u0007o\u0003\u0003\u001b#\\`}\u01df\u0004|+\u0019z{z \u001f*s6\u0014v$g:\u0000 zz\u0013\u0001\u0013\u0002\u0013\u0003+/,0\u0329\u0328\u0013\u0014\u0000\u0000\u0000/\u00005\u0001\u0000\u0006zz\u0000\u0000d\u0000\u0005\u0000\u0003\u0002h2\u0000\u000b\u0000\u0002\u0001\u0000\u0000\u0017\u0000\u0000\u0000+\u0000\u0007\u0006\n\n\u0003\u0004\u0003\u0003\u0000#\u0000\u0001\u001dpt4p}\u0015\n\u0002p\u0749nkltb\"\u060fhxt'4q4c2x\u0003^\u0018s;\u0446\t7\u0235v)0},\u000f\u0015fy\\v_i\u0019k\u0005z\f\u0015\u6b69!hdh\u001cp\u001ed.v{6\u0018\fl}y.}\u0000\u0012\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0001p\u0000 q\u0259\b+lu]\u0006n\u0019t\u03c0"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:31:44.969040",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "34.199.141.133",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "dfd67b5d26fa8fdb5730b93eff4dfd9e",
+      "payload_preview": "kety@6ff(\u00ec,8=v\f'b>$\\pe,a*c\u0017b\u0017]c\brm\u00eb\u001b\u001a.\u0013a\u0016\u000bx*\u000b\u03eb\u0013\u000bd\bh4:\u0006@u)[\u0144&u\f\u00199d1t\fv\u02d2q\\\u0010\"\u0003(2prwbx\u0012 jq\rt5.gqwm\u00eb~\u0013;d,\u0001x\u007f+v\u0019\u02c8fz3[m!3o9<$i\u001c\u0012*g\u0013:\u0013|6\"\u0010\u007f0*\b\u0005\u0017ufz\u0004\u0018.1v\u0382|\u0011<\u0007\u0004\u0016d\u001c\u0015\u022fki\u0001p\u0015\u00178op$;4v\u001c3c[\u0005j=\u0137k\u001an|\u0298fc(&@a\u0002's\u0007sxlabys!c"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:32:58.758531",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.192.142.4",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61054,
+      "pattern": "[;&|`]",
+      "payload_hash": "65fecdb943d06e61440788cdd69254d5",
+      "payload_preview": "\u0017\u0003\u0003\u0000\"7\u0013nvb5\u0001%\u0014z`nc]})1.u"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:02.128937",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "647e2e68d9b4abae617a6ffdbe0fcc71",
+      "payload_preview": "\u0016\u0003\u0001\u0007j\u0001\u0000\u0007f\u0003\u0003kr\u0006q{\u03c4`hq~\u0007/\u0010qjt }xc9nv]y;\u0003[\"\u001dhq>\u0000fm\u0771u\u0000 \u0013\u0001\u0013\u0002\u0013\u0003+/,0\u0329\u0328\u0013\u0014\u0000\u0000\u0000/\u00005\u0001\u0000\u0006jj\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0001\u0000 \u000e\u0018[og\u0171er\u0007m~\u001dip-i\u000e\u0017\u0017y(\u00000\u0019i\u007f$?*i\u0004\u0013\u001c\u0019\u0018.-+\u0013s9\tbbb]we\u0440\u001edqc>gw@m\u007fp-\u0743\r\b\\z@-_\u000e\u007f^/w51x3\u0018qov+&\u025dvaak\u001ah\u000fzv\u0016\u0003ea-\u0001\u0000\u0001\u0000\u0000\u0000\u0000\u001c\u0000\u001a\u0000\u0000\u0017t"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:03.977973",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "66e2eeb267322e302fc80c04c79e1cf5",
+      "payload_preview": "c\u001ba6rvhk\u00131\u001d\u001c\u000e*w3w#v#l+hg\u27d7\u0001\u0014\u0019\u05a1r+d#\u001c9a\u001e\u0012\n\u000fjb&@\u000f\u0010@rp9\u02c9a,mnv7\u001bcrgfq%w\u0011zzbb:\u00010^`\u0000cka<r'j\u001d\u06d9\u0018\u0261|\u0001ji\u001eug_z\\\u001c}\u0001]rpv*\u0005c1*\u01d0\"-^&pf \u001bc{\u000bv\u0019\t\u0017\u0002x\u0002v@\u00177`\f[h5\b?8l4\u000ez\u0006h\t5\t\u00eb1#c2rw\u001c\f0\u0014nt\u044a _\u0016rp\u0002?mfikx\u0000\u001d\u0000 \r\u0583rj%j\u001b5q\u001d4a\n}}5u\u0015\u0000\u0010\u0000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:05.696978",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "13de6c4750835cc66e0ba19caad11535",
+      "payload_preview": "\u0016\u0003\u0001\u0007\u0001\u0000\u0007\u0003\u0003\u007f^n]\u01ab\u0003c*\u0000~>\u0017h`>\u02cbc\u000e \u0005\u0004e+;\r\u001bx\u04bf8blp;o\u0000 \u0013\u0001\u0013\u0002\u0013\u0003+/,0\u0329\u0328\u0013\u0014\u0000\u0000\u0000/\u00005\u0001\u0000\u0007\u001d\u0000\u0000\u0000\u0012\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000\u0000\u001c\u0000\u001a\u0000\u0000\u0017treatment.grammarly.com\u0000+\u0000\u0007\u0006\u0003\u0004\u0003\u0003\u0000\u0017\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0001\u0000 #^\u00ed\u001a\u0015\u001a\"(1(i\u001by\u0000q\u03ae\u001du\u0614x\u0000\u0437\u01ffu\u0018%$~(bevv`'\u02de\u277b;-c9yp\u001d9=\tk\u8e70~i\u0007'\u0013td&\u0018\u0010\u07bcqdpf\u007fim"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:09.612388",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "db597c87f7ffda080306ea7b25a5c11c",
+      "payload_preview": "3<f\u0005?&\u001dn[\b\u0017w\u0004^e#\u000bvu\u0018q\u0004y=kp]6v\u05cf\u0235u\u02acr\u0018qm pa,\u04cf\u00941y,y\u0017:klu\u0744\u00063o=*\u0003|me )kd/$l:\u0010<\u000bfd\u0019\u001b\\\u0017bver\u000bqpd%k\b\u0013\\,+3\u001f\u001aky\tr\u0007;\fl\\n\u0015\u001b+m\u001f\ud810\ude08c\u01c6u\u0015-\u06ac\u0010yd?&{s\b$0&hty&k3xuz\u021fki\u0003\u007fn\u0012\u03b8|,\u001ak\u0000g8\u0018f\u0004{b)h;}e\\;! \u00024\u0005<'\u0005\u0005fahxg\ubfe1lu\u00018?\u001fca\u0011\u0019(g\u001aq\u0005j*m3"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:13.400867",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "a9c189fea65631fa34e167dd317907f8",
+      "payload_preview": "\u0016\u0003\u0003\u0000l\u0002\u0000\u0000h\u0003\u0003\u0015\b-;\ndv5\\^^\\c\u0012\u0003k\r#\u001eh \u070f]hof\u061am\n\u0016|rzh(p\u0015\u0623/\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u000b\u0000\u0002\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0010\u0000\u0005\u0000\u0003\u0002h2\u0000#\u0000\u0000\u0000\u0017\u0000\u0000\u0016\u0003\u0003\u000e\u000b\u0000\u000e\u0000\u000e\u0000\u00050\u00050\u0004\u0121\u0003\u0002\u0001\u0002\u0002\u0010\u000f\t\u0019mvr>0\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u00000<1\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u001c0\u001a\u0006\u0003u\u0004\u0003\u0013\u0013amazon rsa 2048 m020\u001e\u0017\r241026000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:15.606486",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "3f39ce9bd4bde9caaec80567f6967f35",
+      "payload_preview": "$\u00ea\"`6bg\u0006\f\u0011 /wa=*m $/\u0014b\u001ba\u0004a{\u0003\u007f\u000eqo \"%\":'\u0017\b8p\u001d8\u0016fpb[}fw%\u0002n_r&y:*k5xo+rw\tpc\u0002,\u0002\u07cb_$\u0011\u001f\u001exo\u0012_em&!h\u0018\u0007\u00f6\u007f\u0000\u0004b0\u0004^0\u0003f\u0003\u0002\u0001\u0002\u0002\u0013\u0007s\u0012jkn\u01f5;-:\u000f0\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u0000091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u001e\u0017\r220823"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:23.810046",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "85e69103dd1d67d9fbbf83a87e9b05ed",
+      "payload_preview": "eld services root certificate authority - g20\u001e\u0017\r150525120000z\u0017\r371231010000z091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u0001\"0\r\u0006\t*h\r\u0001\u0001\u0001\u0005\u0000\u0003\u0001\u000f\u00000\u0001\n\u0002\u0001\u0001\u0000xqxqgpt}n\u05c8vhx!`t\u0001/\u0002-\u04e1czn6\u0001h\u0007\u00176l#>7\u0019ih\u05f9v"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:26.487386",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "004efeb1c38ec964fec8870d787fa757",
+      "payload_preview": "\u0016\u0003\u0003\u0000f\u0010\u0000\u0000ba\u00048qq\u0344\f22>s0blk\u06ff*\u001d`\u0436\u0638\u0005af!p\u000fz8`wa&w\u0012dv:'\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000~v\u0011jxc#yo\u03b2o@vvatxy#pm\u001d"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:29.109358",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "e805379c0f3618e359836aec527eddfa",
+      "payload_preview": "\u0017\u0003\u0003\u0000^\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0011x@z\u0015pi&fjq2n#)\u001b\u0015^a>\u0002[kt\u000e\r\u009frm\u00ad0\u0262'te\u000e\\xu\f=\u000be\u035f)ekod"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:31.747022",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "87a48c68d08dcce995145842dca32d7b",
+      "payload_preview": "\u0017\u0003\u0003\u0004s\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002a07s>>]/1q\u0007$j\u077a[\u3eece\u0005\u00128\ue220o\u01dc\u0015$\u00109($\u0004l9\u0007na46\f\n~:\u0018\u0016olatk\u0014vu9thhn\u0005ez\u037ebev7^\u007f\u0379w\u04cf\u001es\u000feh\"\u0005g\u0568\u0003\u001d\u0003\u0006cw|\fws\u065er\u001bj<7+r&\u001baf\u0012\u007fqhc*~9\u0015h^vuteu).4fg?>^\u0015?\u001e3$*\u06ca\u0019#7i2\u0019d[m_|re=\rck'q\t6d3\u0006leb\u059fh\u0016^\u0015m91u\r+`x;v\u0000r<2g3\u0381\u007fk\r(\u0001\u0003)"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:33.942087",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "e5ea8f07a6ad8a2e20c55691b4f903a6",
+      "payload_preview": "\u0017\u0003\u0003,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0010;\u0006@;ron\nplt[\u0015?ars1n(hnd\"\u001e'\u0019\u001et\u001f8\u0004jn#\u0018vwb6\u0003\u0018'38\\\u0000>r,|\u0012c\u0011\u007fp`u\u0597j6rp\u0006%[2g\u00044wy@tvz`-q\u0005c7\uee45;\u0000\u007f&~\u0003h<qs*\u001c#ihh/\u000e\u0086n\u001a\u0000~\u00100\u000bz\u0010.\\<\u000e\u0002ph\u000f\u0005\u001a1kc/zb?xd|w\rat\ba\t6s\u044bf%cwr\f\u0005[46n+\u0004\u0017\u0007)\u0121atyz,cbr\u0260j$s\u00b7n\\+\u001a\u0006dbb\tacce\t\u03b6;"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:40.303193",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "947317731abde6bc58d3eabab5e3e0ff",
+      "payload_preview": "d\fc\u07ed6\u0012\u06293l\u0011n\u0017s%1\u0019fd\u0012<\u0014z\u000b\u0010\"\u001b{\u05fan\u0019gr f)aipik4\u001e+\u001dfz\u0610z!k%\u0001\u0014\u001a\u000b.i\u0013\u001c>\u0011\u0006(l\u00b1\u0000\u05d8\u04c2h0\u001b\u05f9\u4f7bu\u025b\u000f#zfg/m\u0640\u00112c\u0007udq[t*@iq\u0003h}b\u0011\u00116\\{\fl\u0004rnex*g% o\u001b\u0006p:)q0\u001e\u03cd!.iot($\u01bd9y,w\u0005\u0001np|\u1205\u0014\u000e2\u0007~.\u0007\u0015gr\u0779m~j\n\u001a&[\nvwn\u001a\u0013v~+hm\rs<-\u0004\u01a5#zt\b!\u0003\u0000\u0015\tb6f0\f^\u0005)b~\r8"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:49.520137",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "751bd9f4dfbe760fc01081a1914c6dd1",
+      "payload_preview": "q,\u0000\u001bry\ty+dfp\u001ff\u0000\u001d?\u0002e\u0016u+rx\u049b8q\u00128\u0003cw);\u001c\u8914@~\ru\nwum\u0018}'<d\u0015?\u000fvh\u00101ea!co\u0001#\"\njp*t;\u00144\u0010^ces`f \u04d9:f\u0018i?yfigs,pg:1i\u0005\u03f5o\u0711ua)\u0005q\u0010\u007fvgi\r'\u001d\n3ss&4e`fioz\u0017\u000e[\u001e\u0019]\u0264\u001d\u0006v,k\u4aac*8\u001aa\u0000$a\u0000\u0014{i{gn'x\u0006|\u0146\u0390t\t0xh\u000ey\u001c\u009f*\u001ej4^1\u00fcv3m\u0005,u$\u0137\u0007v\u0278\u0014f\u0014\u0006c\u0005\u0004g]\u0004)g0/"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:51.067040",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "bb868e3f087e09f211817726b7412d2a",
+      "payload_preview": "hu\\!$x\u001dup\u015dj2\u0011p4_\u0007n\u001fw\u01a5;\u001e|u\u000ekyu\u001bobvb\u000bc{kfa\u05c3}}\u066ah9q@\u000e\"e,\u05b4b\u00143ag\u001d\u02c1-}m=sig\u0006c\u000e@?\u0019t\u000f/_\u01d03i1q\u0013\u0000 ypn\u0157_s<\b\n\b\u0017\u0377t\u00037wy ofk2\u0019x)$g$d\u03b3\\\r0+0\nl:)8c\\]\u0016s\u0015r\u001d^k]@ln\u0002{io\u0001$z0\u001d`$o\\fbs\u000f\u0018msyv\n]px\u001d{lk\u0015v}\u0562%l\u0001:\u0015l\u0003t@h(\u000fv\u0001,\ud1df\u0007bjs 0\u0696c+\u035d\u001b"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:33:58.121726",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "00a83ac01d8f38a6316b740930379293",
+      "payload_preview": "\u0696\nlk\u000e\u00176<b%?*\u0578||\u0307\u0007zrp\rbsv-\u0017\u0003\ub108b\u001e\u0019b\u0001>v\u001c\u000f;j\u0010\u001cc\u0006o\u00057j[\u001d\u001au!(d\u0001 \u0017q\rrl(x[\u0513w.\u001dw\u0000\u0005a\u000b\u0276z\u0011k#\u001b~`sr\u0016>y\u0016bs%\u0014\u0019b?\u001c\u001d\rub?\u0011\u0019[>r\u0568\u0010\u05290c\\}1\u007f=1\u0710l*\u0002\u000b\u0006i0\u000bl\u0005+\ru\u01c2\u0225_#z.\u0017\u001a\u000ep^\u0010?|\u001c,^8{rnluu\\zkd(!uqc\u0013~\u0014{^as\u0001\u02a5\u001eec\ub831=\u0014ex\u001c\b\u028fl7\u00076`p/\u0010\u0019tti4\u0007\u0010-c"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:00.700058",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "ed9cf19c04447cb269fa8185cd5bd8af",
+      "payload_preview": "yc\u0005om\u0019\u0003\u2449\u04506$\u0723d\r\u001ca}g\fe\u0002\u0018i)_\u0199@#\u0012>`d\u0003ndqk&(/=\u0473\u0018$a\u0017!\u0000[e\u0019\u0011j}~<ozq3\u001c\u0309`\u0003fm\u0005\u001a!c\u001agk\u0001)\u0007d!/g@=[z/\u0013ts\u0006\u001al\u0017\u0019\u0017$4{\u001dy5\u0011hp\"\u0589\u044c|u\u000f\u0010r\u056cr2\f\u0007d\u001fo\u0000*m|wx\u06f1@\u024bz\u0006\n]b2tp6wicr\u0012\u0003\u00117dsg1*\u001bb\u037dh@z*_\nv\".rztz\u0014t\u02cc\u0010\u001c\u0014:@$_r|f\u0523y?\"9\u0015\u001aq\u001d*fv\u0002j2r\u0004v$_/"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:01.494348",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "ab9b52827c1d482ac40e1209e6b99b1c",
+      "payload_preview": "..\u00122v6j\u0018\njur\r\u0006\u0012m<g%\u0799aln$\ffgnv!l\u0003xy+kfm6r\u0012\u0677\u0580\u0005]l\u0019#~\u0327\b\b\u000f\u001a]jd\u0016{4\u070f*rs\u0006\u00075[#&\u0011\u0289et[\u0005_\u007fdtx\u03d1dv|n}l}@\u0010\u000b_\u001a)m\u0010bg!8\u05b7z}h&d\u0014\udad1\udd6a\u0678n:ra]x\u000ee2_\u0018dp8{t!f,,9wexi\u046f\u0672kby?f\u0003-ws\u001d\u0018wji\u0006j\u0015\u07b31<\u0013\u001ehp!!>z\u0005\u0016tfn+\u0019\u001004\u000fp\u001b(mzpz^\u0007az4=\u050dp\u000f z\u001f\b#@c\u0010"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:02.966845",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "9ce6c8bad1a41c35313cb0a6ee39848f",
+      "payload_preview": "\u06ea=p\u03c9\u0018j5iy\u0004au\u001alg\u00165^qi\u0371!vv+\u0014.j\u061ac\u02fd8\u0007cj%\u0019}\u0004wr\u0019,s\u000e\u06a0<g\u0017\u0274\\byg%xm\u0018\u001e\u000edmq\u001a%\bc\u0014m+rrnn\u001fa~~5*!]jf\f6/%e<jgb%\\-&>\u0013\t\u0001\u001a}7o \u0268flqv\u0003b\"\br\ue7a4\u00198|g=a']8\u00148}rk=\u0017a\"\u0680z+\u02e9po\u0012\u0001!\u001cub\u00152kw\u0010\u001cn+\bs5b7dp\u000bx\tq1q>a,&.r!\u000et9\u000b>i\u0018>y/\ng'pri\u000e\u00171u\u0002d5\u072c\u0017"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:05.000587",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61139,
+      "pattern": "[;&|`]",
+      "payload_hash": "1f27b3a42e4faaffd0ed88facb4d1fc9",
+      "payload_preview": "\u0016\u0003\u0003\u0000l\u0002\u0000\u0000h\u0003\u0003v\u00f0.o\u001e`e69\u0012\u007f^s\u2c66}r\u001as\u07ce *\u001ce|\u0019\u0001\u00193\u0017i\u0704g@r?//\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u000b\u0000\u0002\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0010\u0000\u0005\u0000\u0003\u0002h2\u0000#\u0000\u0000\u0000\u0017\u0000\u0000\u0016\u0003\u0003\u000e\u000b\u0000\u000e\u0000\u000e\u0000\u00050\u00050\u0004\u0121\u0003\u0002\u0001\u0002\u0002\u0010\u000f\t\u0019mvr>0\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u00000<1\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u001c0\u001a\u0006\u0003u\u0004\u0003\u0013\u0013amazon rsa 2048 m020\u001e\u0017\r24102600000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:07.908107",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61139,
+      "pattern": "[;&|`]",
+      "payload_hash": "3f39ce9bd4bde9caaec80567f6967f35",
+      "payload_preview": "$\u00ea\"`6bg\u0006\f\u0011 /wa=*m $/\u0014b\u001ba\u0004a{\u0003\u007f\u000eqo \"%\":'\u0017\b8p\u001d8\u0016fpb[}fw%\u0002n_r&y:*k5xo+rw\tpc\u0002,\u0002\u07cb_$\u0011\u001f\u001exo\u0012_em&!h\u0018\u0007\u00f6\u007f\u0000\u0004b0\u0004^0\u0003f\u0003\u0002\u0001\u0002\u0002\u0013\u0007s\u0012jkn\u01f5;-:\u000f0\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u0000091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u001e\u0017\r220823"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:20.840291",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61139,
+      "pattern": "[;&|`]",
+      "payload_hash": "b639bc3511c0580bb2cffdb36639993e",
+      "payload_preview": "eld services root certificate authority - g20\u001e\u0017\r150525120000z\u0017\r371231010000z091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u0001\"0\r\u0006\t*h\r\u0001\u0001\u0001\u0005\u0000\u0003\u0001\u000f\u00000\u0001\n\u0002\u0001\u0001\u0000xqxqgpt}n\u05c8vhx!`t\u0001/\u0002-\u04e1czn6\u0001h\u0007\u00176l#>7\u0019ih\u05f9v"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:26.454712",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "23.22.162.199",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "a12271c7c42206f8590e114f768656ad",
+      "payload_preview": "\u0016\u0003\u0003\u0000f\u0010\u0000\u0000ba\u0004ls\u0003+}\u001d}\\\u00028\u001d\u0089\u05ffl#]d\u00183[wb|3\u001e0v_\u0019\u007flyf\u0012>q\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000;?ts0\\^\u02b420\u0254pt\u07b3i"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:31.096030",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "09ead853e8f76122f68aca00eb9510d8",
+      "payload_preview": "\u0016\u0003\u0003\u0000\u0004\u0000\u0000\u0000\u0001q\u0000\u00015\u000b\u0000st\u0010v\u02af\u0005a^-\t{|\u4e5cq\u001ac$%\u0011.\u000fon:v\u0011\r\\pv\\}.?di0\u0001 wwby\u0018`ke`\u0018|\u0012(;oy8fn1<\u001e\np?kpkgkhp\u0002\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003x'\u011f\u0316qz/zp;e{o\u000f\u5132"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:33.732265",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "dd85815ab2e5b67ff52662a3e5b57fe2",
+      "payload_preview": "\u0017\u0003\u0003\u0000i\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00018x\u05c0\u0203 r\ts#(\u0014k \u0002%s\u000b%\u001e\u0007\u0347{\t=`\u001ce}=aq"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:34.648673",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "64611986fd48761024eb729e28041a92",
+      "payload_preview": "\u0017\u0003\u0003\u0001z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002a\u0012x4\u0011h\u0013\tj\u060ab8`\u0011f|t\u001a^'\n>\u03af&\u00a6,dk5\bn\\\u001c)[\u0003b\u00022\u0010\u077fr;1_gtlko\u01ce)+\u00011u1\u02a7\u0004\u00195l\u000fa)^\u068dk/3\ny`ha\u0019q\u057b@!q@\u0019vn\u000f.\")\t\u0002x\u0010f\u0002wm\u037coq^dimsa]b?\u001ci\u001fj}\u001cor`v\u0010s.n\u01ef\u0004\u0002}-\u0012p.h-,\u0211\u0002\u0001\u0005\u0095s,|\u0017\u001f6\u030a\u0018giu\u0010p{\u0006~v\u0013ns\u0015>n\u007f{t.y5\u0018m\u00170^\u001f\u0015n:(\u0007ajzj*5\u001b-"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:36.822797",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "123275ec80985e3740ca5115be633127",
+      "payload_preview": "\u0017\u0003\u0003\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003l@h}hpr\u02b7\u0007\u0007dst_\u000ees\fm\u0011w\u0000uks\u0015\u000bk\f\u0005 ]\f+z\u0017\nekm\u0013n\u0004\u07538r3?+\u0015h\u0012\u0015k<`1a\u0019`ur\t[\tj[\u0004\\3\u0016\u000e\u007f;\u0012;lra!<de\u0006\u0001\u001at%^\u001f.v^\twa$\u0005\u000f\u000f~\u0083\u0012t\b\\o@\u0007)jy|ymx5b)3\u0004\u0000y\u6c03 \u0017q$'fh\u0018|\u0273j}!x\u001ab\u0013>\u2b97t-f\b[q[\u0015\u001caq(\u007f\u001f<k{\u007f^t-\u00142\u0015\u0011-\u0565xfuv.uq\u0013\u02b4\ufbb87wa\u0003%\u0000*;"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:39.167422",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "97ab99ee6e2e3eaf63c30d08607a31dd",
+      "payload_preview": "f,\u001bb.r\u000fz?\u0018sw\u0675r\u001cv=\u0003zctj&(\u0453!\u000e\bfdc`w\u001a!o\u07b2ew\u001e\u001a\u0018\u0590\u0007 \u001awk\u00190\u001fk# mrq[\u017c\n\uee48ur\b\u001fq\u0014htn2b(\r?l[\u0770szgc\u001co.:%9p&\n%&\u0016br\u06a9\u0016\u001buv\f=a\u0004~\u000b\u000bkn\u001a\u0012x\u001b\"5z!{k\u0010c\u0018\u0019\u0014\u0015a3k\u0442^rr\"5\u001f\u0003\u000f4vs<c\u0314itn\u0018]5sa;.._h^s4\u0003\u0006$<x\b\u0584kv\u0012l6|fl\u0001s\u0001\u0589m/h\t\u82f8b\u0014\taa\u001a`\nc\u028eg\u0010\u001be\u001d\u0014"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:42.631923",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "736684ecaf7805deaa7c6b11305bea85",
+      "payload_preview": "g\u0018a\u0012\u00fdg\u000bg'\u05e4#\u007f\u001d3bb;xe27o}~&ly\u07a6\rd{\u0006@re\u0015$\u001d^,k\u0000kh{#-\u76f7[\n./_\u0693ia\u05ae\u00060\u0011,:g^pl\u001d \u0018\u001f?\u0019\u001f3\n$(u\"t'\u001e.x-\u0565\u0017\u0003tgt\b:#e\u001a-\u00126\u000bha<\u000f\u0006\u0011$pkg)\u0620\u0016:\u001bd0\u0129a[m[u\u05bbs7\u000b5gs\u0006\u000b\u0007s5f\u02fezb_o\u001bm-aiz!dll\nmih\u0001\u03d7\u0019oys;/\u0019rvxd\u001c\u0002$\u0680{[>i\u076d5\u0012\u05b4\u00143\u0010a1`v\\\u0010e^k%l\u0012\u0017q\n\b("
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:45.937115",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "c75b96e52ffd04c1ba64b0e2b6d081fd",
+      "payload_preview": "jx\u02b28vu<3\u0006y'\u000ba\u00026_h\u4eac?z\u0007\u0006\u0016\u0006qya@\u007frk\u001f\u0013i\u000b`>\u0004\u001c\u00043bk\u000f~mb,\u01c6\rvv8\u0014j\u000fo\ft~\u001dl\u0007|h f0p^\u000e>s\u0017y\u0007v\u0011o\u0001\u001f\u009er\u064fc3o\u0002\u0006n\u0649 5\r\u0007x2,|q\u0015c\u001b63\u06f8\u0003]\u0013\bu\u0000\u000b\u0019\u0007k\u0014evl\u0000qs%2\u0013h\u0016t\u001d\nh\ru4\u0006?\f4=z,2+}ga\n`\u000f(k!\u037b\u024bni\u0015^\u0377o\u0011\u07ddk6=\u0017g\u001714\u001c\u0011\u00f5;x\u001fb_1~~eyur\u001e\u0000`k\"\u0002>@*a|4\t\u0019"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:34:49.929874",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61139,
+      "pattern": "[;&|`]",
+      "payload_hash": "abafd63417e82b98d7b71bc9538610da",
+      "payload_preview": "\u0016\u0003\u0003\u0000\u0004\u0000\u0000\u0000\u0001q\u0000\u00015\u000b\u0000st\u0010v\u02af\u0005a^\u000b\u00a88b\u001fs\u0017\uffa3\u000b`\u0521@=f\u0011\u0016\u00853\u0004:7>\\\u05a2[ax\ueb22wsnn_@ik\u000bj\trbi\u0000y)|q\u000f\u0011\u077eq\u0018+\u0011kcrl\t$\tlyivcvg r}i\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000:s\u007fio\u065a2\u0017\u000b0\ud7aazktl\u000b"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:07.808476",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "23.22.162.199",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61138,
+      "pattern": "[;&|`]",
+      "payload_hash": "0557d18c9cad4a3183f085e6e39314b0",
+      "payload_preview": "\u0017\u0003\u0003\u0000)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005&#\u0016\u06a2t\u03f6a\u007f\bjch\u0000\u000e\u000fuzj"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:12.408498",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "54.236.172.247",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "85a5daa49af59f753cd543dab43300ef",
+      "payload_preview": "\u0016\u0003\u0001\u0007\u0001\u0000\u0007\u0003\u0003h\tik#i\u0018\rhlom&3p\u001c w{\u0000tx_c,>*\u001f]a\f%[\u0728b,0\u0017b\u000e!\u0000 \u0013\u0001\u0013\u0002\u0013\u0003+/,0\u0329\u0328\u0013\u0014\u0000\u0000\u0000/\u00005\u0001\u0000\u0007*jj\u0000\u0000\u0001\u0000\u0001\u0000\u0000\r\u0000\u0012\u0000\u0010\u0004\u0003\b\u0004\u0004\u0001\u0005\u0003\b\u0005\u0005\u0001\b\u0006\u0006\u0001\u0000-\u0000\u0002\u0001\u0001\u0000\u0012\u0000\u0000d\u0000\u0005\u0000\u0003\u0002h2\u0000\u0010\u0000\u000e\u0000\f\u0002h2\bhttp/1.1\u0000#\u0000\u0000\u0000\u0005\u0000\u0005\u0001\u0000\u0000\u0000\u0000\u0000\u0017\u0000\u0000\u0000\u000b\u0000\u0002\u0001\u0000\u0000\u001b\u0000\u0003\u0002\u0000\u0002\r\u0000\u0000\u0000\u0001\u0000\u0001a\u0000 ]\u0004\u0007\u05090`3\u00152ff_!tt!\u0015\u0000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:13.201260",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "54.236.172.247",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "71f9c6558d0a5387235bbe0fd703be3b",
+      "payload_preview": "s\u0014vq&q\niz6\u055fv6<7+\u0010\u001amp)s*\\%v4~p\u02152yyw\u000e\u001f`v^d\u0003ju\u0316'\fce@mta'g)\tzu%1\f}\u0012z>\f3gqj[h\u0475\u001b\u001fpd8h\\%n\n0k5jv\u016b5}o%mqmra<:at\u0137\u0016td;n\u0007\u00131a\u0005>j7)nn\u057f\u04b7]b\\do'rhn\u0005g\u0017d\u0018@6\u0015\u43c1llds#j\u0001$\u0000\u001d\u0000 ,hh\bs\u06aae5k\r\u0017a#\u00bc=\u0316\u00108\n\n\u0000\u0001\u0000\u0000)\u0000\u0000\u0000\u0001j\u023ca'hr5\u04fdeee xo\u05b9c#\u0000\u0019\u0010"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:14.501145",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.236.172.247",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61144,
+      "pattern": "[;&|`]",
+      "payload_hash": "7d5dcff067e3a5969a6c7854df4f1df0",
+      "payload_preview": "\u0016\u0003\u0003\u0000z\u0002\u0000\u0000v\u0003\u0003\\p\u06ac\u0018gp.\u0111^\r ;(g`y4 w{\u0000tx_c,>*\u001f]a\f%[\u0728b,0\u0017b\u000e!\u0013\u0001\u0000\u0000.\u0000+\u0000\u0002\u0003\u0004\u00003\u0000$\u0000\u001d\u0000 \u0012\u0011ta04%k_i1\r+g}z\u0017yy\u0014\u0003\u0003\u0000\u0001\u0001\u0017\u0003\u0003\u0000$`{a\u0015\u0011\u001d*\u0003/\u0010h8}.\u000e^*i?l|\u0006\u0017\u0003\u0003\u000e\u022b+__\u000f|\u001a$b\u0016\t\u0001c\u0002rxakxwva4\u0003a y6q\r%l)l`'\u000ba\t\u0374\u0002\u0756\u000ftd+e\u0000h8\u0003q\u0006\u0010'h\u0011oo,s&\u0562@)$i2a\u000b\\-"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:15.384362",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.236.172.247",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61144,
+      "pattern": "[;&|`]",
+      "payload_hash": "967da6b5a21e086537a3cc047a3536ce",
+      "payload_preview": "6`ee\u0006[=l\rp\u0000dtmsc\u043ee\u007f\f\u001a8`zr~!#gc\u02c1*\u0001\u001d+\u0317\u000br\bfq\u001f\u073a93\u0010exm[jvc'em\u001e%5,\u001e\u067dn\u0264gh7=^\t\u0225\u00f3j\u0013i3h\u00bc@ak\u0012\n8\rf\u007f\\\u001f\u0003>n#\u0719ko\u05d8~,t\u0017+o\u0016y]\u0016c2if\u01407\n\u0005f\u0015uvs\b@r\u0004\b\u001b0#x\u0006\u000en\r\n\u0005r\u001cjs\u0690/>\u07f8-shmn7%#r\u0013u\u0007ha+\"!v\u0000v\u0005j8\u0005a,\u05b1\"\u001b\u04f5l\u001c>]it\u000f?|\u000ey\";c\u0014\u00ef\u001c\u0005yg@c\"x\u0002+z"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:16.798908",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "54.236.172.247",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "25b9d03378059e8aab6fc8b79169f8d2",
+      "payload_preview": "\u0014\u0003\u0003\u0000\u0001\u0001\u0017\u0003\u0003\u000052eu\\\u000e'~`\u000f3lp\u0007x\b\nrkay_]^k\u001btx`"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:18.411850",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "54.236.172.247",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "88bbeab3123ca3a94fe16e387712e96a",
+      "payload_preview": "\u0017\u0003\u0003\u0004rv3\"3\u0016\u0005b\u001ew%a\u00009ci(aj\b8\u001e^\u0019\u00001\u007f\u0012\u0010m\u0000ns'3'jw1jg\u0016_,4/+pd\u06a1\u0005if\f}\u0013,\u001b?\u063ej\u007fo\u04310$\t1\u0019w\u00195\u0005@hm]\u36341#\u0004\n85c\u0018\u001b)brki@@\u001ary%qmj\u00b2\bs+\u0675\u0014%4h\u0003v\u0014\u0001qttb\u0007mxt0[kkino[\u0013};\fl<v\u001d\u001aa9:c+\n@m\u0005\u0012!\\]qy!\u0003*\b5vf\u001d'y\u0249qbz\u0523\"w_@\u0015\u000e\f\u001a)i\\il\u02b85jg:\u060dn\u0000a\u0017?2\u0005\u0007"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:20.368526",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.236.172.247",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61144,
+      "pattern": "[;&|`]",
+      "payload_hash": "de5d72d456b56e1fb8c69926a7abdd6f",
+      "payload_preview": "\u0017\u0003\u0003\u0000 k'|j;\u000e\u0007r^\u055f$\u0004w\u0262e\u0006+w\te?\u0144\u0010\u001c\u0017 \u001d? p0oi_)h\u001ec\u0004y\u000e\u000e\u07d3(7\u0001\u06c3p7\u000e_4f'|u\u007f\u0014kwn\u0005p`\f\u001b\u0004\u0010l\u000b,a,\u04a9\u0016gpe*\\bu5\u0001\nem\u0018\u0000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:21.438796",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.236.172.247",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61144,
+      "pattern": "[;&|`]",
+      "payload_hash": "c9a965306765104ac5a552aec5f34bb7",
+      "payload_preview": "\u0017\u0003\u0003\u0000b\bx;m\u001d= c[kw4,o.g'j\u000398\u02e7~yn/./4\u0018\u0013v\u0379\u001a\r"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:22.092030",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "54.236.172.247",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61144,
+      "pattern": "[;&|`]",
+      "payload_hash": "e3a77ca53a2a11c281c72c068f3cc615",
+      "payload_preview": "\u0017\u0003\u0003\u0001u^\u00ef<5k`#q7}i'\ro4^& !|xov\u001d4\u06e2mmu\u0014\u001e\u0011\u001d\u0004rp\u001f+t\u0019h7x\u0007\u0010x)}\u001ebu\u01e5yl\u001d\b\u028b_\u0284nm\u001d%_w\fu)\u0004b\u0014\u0003:]eztn<gu\"\u0004yy\f')p7t;\u119fb>\u0015t9n\u0019!p\u0094thg\u023f\u0006k\u007fl\fy\u000bm}y2ed@m5+j\u001a\u0010l3\u0005\u07e46\u0013\u001c\"\u0003\\\b\u0001*p\u0013ax)j;_zj\u001d\u00150\u0010rgr\t\u001c<1)o'\u61f75\u0001m\nc\u0469\ua512ar\\\u000b-g[\u000e5\u0006z\u04ab\u000e;\u001ax\u0003bwcb5\u0017"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:24.360744",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "11c674ce2a3195afbbc364c600981e84",
+      "payload_preview": "\u0017\u0003\u0003\u0000lp\u0007k~t\r\u001b\u0000a~5\u001bw\u0013@\u0019j\u0010_!\"\r,|\u001cwo.?pplt+`e:\u00120\u000f:\u0016zj~w\u007f-s\u001c\f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:26.692293",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "9e9af40108ae2aa55ad7045e120ba581",
+      "payload_preview": "\u0017\u0003\u0003\u0013\u001asxo\u0016\u0011(k\u034e\u0014\u06f3eq\u0019\u001b\u0018\u0019@m^\u0001-{ \u001f\u001ehx\u001e~n\u072bw\u0011q_\u026a$ft0 7\u0004\fwwgztdvf/5\u0001\u0018\u0001\u0003\u001dds\f\u071b\u001cqjy\bac\u0011n\u0340\u06e37\u000ej\u000b\u06a4\u0012@;\u0788)\\@`a\u001dx\u0183}j}4\fsinhp)v*`\"\u0003(j*3z#\u05e9ww\u0013@\u0013pa\u000f\u000bs\u0015\u0014~y^\u0015_\n6$\"\u0568f\u0017t\"/|)531\u0015wo\t\u0015\u0005\u007f\u001fbm +%\u001a\u0005daj:\u00b1kky?.\u0275\u00e9._\u0017q\u00192\u01d2w=4c\u001e\u0000\u00002\f~\u0014\u0003\u0007!("
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:28.589804",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "2a0873bcb3051c80351ce56dc7b37750",
+      "payload_preview": "f\u06a5\u0010\u0019svdq\u0003sbbz\u001ayf\u0004qe\u000ff#\u2c65rcc\u0000hs#9 \u0017\u0006n.m\u0018ftnf@\u0007nt\u000f_\tm\u0767.\f:\u4771bq\u0011\u009cz s\u017ew2'\u816fkcnv\u001ep\u001c\u000fqk%^\u32e8?\t\f6\u0012\u0012|`k?\"=\u000e\u0003mg\u03bb\u0007fo&a\u0003zg\u000b+\r\u02b4b\u00042\u0017j4\u0005kryw9mq`_ott\u00120*%\u000e\u0001\u00bcs\u04ces!:p\u025d\u0006kz\u0012>\"\u0002'\u0449nj$\u0006p\u032cj\b>\u0005;]ah<c;\u0011&\u0004bor,\t0c9fzu\u001f\u0011\te\u001b*&jbpi\u00ed\u0016eoukf"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:29.435018",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "8716b8172abb53dc7ba1ddab93c55291",
+      "payload_preview": "dg/\u001e3mq~mc_\tw\u0011`i={tg.l\u043f\u0003\u84e7zm\u0011any\t5[\u0001km\u0005~\u0007\u0011m\u0131v\u000fq\u001a4\u00a2}`\"w\u0000j\u0004\u000b=n.\u000b<e\u030c\r\u0018~v+\u000e_=_\u0017l\u02efb\tu.\u0014\u0019\u01402\u001e\u001fb\u000by{pr+g\u0014mp\n\u000e9zh\u000e2\u0014\u0004\u0012`zk;0\u0011on-kkeq\bc=ju\u0018e-)\u0016ya\u0001kn*-\u0011h\u8615tu\u001dhqw\".\u0019v/\u000fu+n:\u001eq\u000e`x3]sxs\u0002q\u00123u\u0624vq\f_{.s\"\u0018g.\u0018\u001f%i.0\b\u001evk>0d>\\aw"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:38.986806",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "89d62b1bdfcbdcf03e6cdf9599ff9729",
+      "payload_preview": "z\u0013\u0003n`\u0103f\u000fk\u0013um\u0001jb\u001fq_\u0016.pb\u0002nh\u0016\u00104\n*5\u001fa\u0012\u031d=sy-a\ue4b0g1]t\u031553\n\u00001(t\u001blzr'\u000b^\rc&q*ld_}gm<*\u001bs]c&\u0012sl$;(\u0015{v pd\bju=o\u00f1w`8\u001c\u0015!\r\u044b\"\u0017n\r\u0726y=d@\u007fe#c8y]}7?\u000f=\n2&\t8`\u04c8>.i\u0000\u0209-1\u0002\u4512]\u000b=xh~^\f\u05f1r.m\f/s\u001c]k+7@zsw\f<3~7kj`(:.m\u03afy_*z\u06d5\u0004\u00a1/~\u000fy:t|xf\n6^9|:"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:46.035204",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "927ce16edc7ad3ecd288712ef941bcbf",
+      "payload_preview": "\u0017\u0003\u0003\u0000d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005<'\n$\bqin\u001f\u01b0wi>w4&\u0005\u001cb\u007f\u0011te\n\u0004h'2\u018chg\u02f0\u076c"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:48.455975",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "f7e40d55252370506d54bd0acf14c8fb",
+      "payload_preview": "\u0017\u0003\u0003\u0000)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006x\u057c>p\u0019|j.{hk\u0006m\\"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:49.822905",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "d532dd402f113c9b1029aaad909d07bc",
+      "payload_preview": "\u0017\u0003\u0003\u0015\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007qdosoe.\u00190\u0007\u0015yn:\fti\u0137\bih:u\u001b&g\u000bpi\u0016<p)\u001d#cjzc\b\u0010\u000bh\u0004\b\u007f#b\u07ec:\u007f0\u0018eil\t/:u\u001d\u0017\u0019\u0003\u0006q\u001a\u001d_`*\u036d7;\u0004rpb\u00e6h\"v\u001dc\u00fc\u00f54,>aov\u0637{v\u0010<3^bd1s,d2\u0013\rh\u001adf/k\\u\u066ba\u000b:\u0015\u0010\rt rbzu\u02a4\"n38y1\u0017\u0199,!l^p\u00017x+ek5ew\u0006t;|[qs\f\u0006\bcdx;/6bnbj\u0590<0`i'vsk\u0262u\u0002*\u03d9]"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:56.603999",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "7dee9de514539717939100c46d34e821",
+      "payload_preview": "l-4mw\u0004`\u0292q3q\u001a\u0010\u0019<oe\u0001\u0007b;\u037att7fe\u000ed\u0000>-%+\u4f9cckp@~x~$i\u001b:\fj\u0011/sz\u0002i\u001f.\u000e\u007fa\u000ej\u05c9\u0003mt\u001bcg\\(i\u0016\\?/0sjs\u02f8bq\u0012z\r0<q:ri\u001f\u0016\u0001od\u0010\nz5\u062c=\\tu\u069ai\u0458\t=\u04a5qav\u056f\nh9\bp\u0759\u04cex~3ry\u0006ho(\u0013-gji\u078do\u0002am#\u0017<\"*\u000bq1\u000fu@a\u023f%\u0012\u0000|\u0016\u0005\u0295,}8ds@z\u0006gcuf t~b)65\u00101\u0015\re\u01d6_\u0016?[\u0017i\\a#\u0018\u0004\b5\u0013"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:35:58.938943",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "f7d39c2061b41ca0f5326443f5bfd7fa",
+      "payload_preview": "\u0014j!\u001f\u0591h\u03d7,\u001ad[91_k7\u001ao;e\u001e\u000fm\u06f3k'ln j~\u0523\r~*\u0002f\u030d%\u028e;#\u01c6ms;09|tj\u001e]=\t]'+'\u0002\u001bse\u0006~\u0019q\u027895a\r\u001a\u0005]\u0016c\u00032`5t\u01e7a\u0006f7%\u000b^\u035cr'^2\u001cho\r\u000f\u0014t-w\u000fu<\u0005\u057dn6xdl4b%\u00171~|\u01e5\u000ec\u001fqu\u001cl,y\b/4\u0015\u0004+\u0014m\u000b[q\u0005\u0014?t5\u0011*\u001b\u001f*-f\u00117\u0324h<zm#<:-\u030ed\u0006j \u0015@z_dbj~g#\u00030k\u001e.4:\u0007rg\u045ej5\u0019 e\u001cq:\u0018"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:01.801125",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "52.7.153.82",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "5e0728ef93f9a3f411d518e641b39871",
+      "payload_preview": "c\u0010\u001an2bw\u0013f,k4\u0015f\u000fe\n2$q\u0001ca>\u00e1&ch\u0004\u000bty<ha+\u0530zv [oqf\u0007d\u001f\u001607\u001a\nc4n81\u0007b\u0013zw8:wqn.h'i\u0002\u001c\fh\u0006\u001et\t[j\u0016t\u0019^,\u41f3gc\u000e<6\u000b.y'tc\u0003\u0012.h\u001e\fzt\u070dv]^\u0017\u001c:;4\u001bi\u028af\u051b\"gg\u01cc7b\u001b:\u001af;n\u02e7\u02fai\u0640\u0016\u001dw]\u001cef\"\u0017]h\u0005\u001f\u001f\u0018.qc\u05c8#\u001f4g|\u0322r|-8_\rezlh1m%n6jm:cfd$\u0012u7\u007fpz\u0004]icwtfa\u0006lh"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:04.462514",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "52.7.153.82",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61167,
+      "pattern": "[;&|`]",
+      "payload_hash": "a3b83a73be652a7072afe5b73b2d4230",
+      "payload_preview": "\u0017\u0003\u0003\u0000)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004kjel\f\u0001&d\u0006pn\u000f#,n{:f?["
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:05.852571",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "52.7.153.82",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61167,
+      "pattern": "[;&|`]",
+      "payload_hash": "70cbc90cc076825f89e7cc3cdd367d49",
+      "payload_preview": "\u0017\u0003\u0003\u0001n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005)!]4$8annhn\u0014\u001f \u0000\u07fdp\u0005yepo\u022dj:p6or\u02d6'd=am!i[\u0019#f 3q|#\u04589\u001eq<\u000f\u0015\u0013\u007f\u0720u\u001a\u0015m)hry\u0006-9&}d|~\\ii\bxi\u0307*3\u0017?b-qv\u0467[\r^\u001e=^\t6\u0641\u0003\u001e\u001c\ta\u018d \u000epu\u000f3f_]y\u0004\\<)qobb\u0012\u5fa3\u0006\u000e/zz\u0017}i`k\u0001\u001e?\u0005\u0013\tac6\b\u001b\ud9e1\udea0 3|}2b<l3\"acj\u0002\u000e\u0001c8y l-\u0014\u05c0cq47\u0018\u0000mc\u0012-jn"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:09.261669",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "142.250.82.211",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 60072,
+      "pattern": "[;&|`]",
+      "payload_hash": "4f38491bd7c31fac5d6dcaa878b6106e",
+      "payload_preview": "\u0001\u0001\u0000,!\u0012bevrvsliz3tsr\u0000 \u0000\b\u0000\u0001\u02fa\u0010=\u0000\u0000\b\u0000\u0014u\u05f4\u0015}x\u0016f=k\u16c5(\u0000\u0004;k)x"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:13.120381",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "37a75d347c505fb237bde2a4e87b0736",
+      "payload_preview": "\u0017\u0003\u0003\u0000pt?\u0573s|0\u000f@u&yhl\u001d\b\u0569|2iw\u007f\u048d\u0002\b\u03f5r1d\u0015d \u077emg\u001f{\u0018\u000bhoz2t\rzw\u0003\u000e\u001f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:14.600494",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "182079ff8a8b6642720a4cbc8b343dd6",
+      "payload_preview": "\u0017\u0003\u0003\tl(\u0582\f\u077d\\\b\u074cj\u0005mz\u008e5\u0014r\u0016qps\u001f/5w\u007f\u001a2\u0011\u0368_{\u001b0rz\u001a\u0274\u0004\u000faslc\u03dbh<3q\nw>r\bpv[b\u000bh)bp\u0000/\b:4].\u074cpr{[fw\u007f\u0381zz{#~4\u0017ka\u06f7xs\u05c6\u0014\u04d1ni+\f{6\u0016wr7i\u001dp{i4\u0004p70dcl:\u001bzgtb0\u001c^xf\ro\u0012|?0&pa*bt\\u\u0004z\u025dsq^do*ns<\u0014\"\u04fb\rtax{#5\u001e*/s\u0016e\u0011\u000f\u000e\u00010b\u0011\u0016i \u0000\u001e\u0527&=\u001d (g:\n72\u0325\u0004\u0447\u00ea"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:15.737296",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "51.132.193.104",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "c9f1683d6426815f94623b13c4a939a6",
+      "payload_preview": "\u000f\u0632gt\u0016;\u0005.ttx\u0113s\u014f,z\u000ejf\u001a4\bt4\u0016i\u0000h\u001b\t\u033bs_r!{:j7\u00124/$\u0000\u0005x\u05b1\u0002\u007f\u70ffb\u001c\u000b\u079dl#l8\u001e,<4n\u001dz>\u001b&[dw\u000e=]\u0003#=\u05609\u007f\u0000\bz\u0017lt`m\u001d\u0018vf\n_8#\u000b!}pf f\\[;v'\fg(~8\u0013\ub978\u0013x8\u056d\u068dy\u0012f7\u0010\u0000h\u0521ddyv:@sh\u0123*k\u05b3nff|\u000f\b\u0013\u001e+.\u0005m\u0013h\u0017{a\u0004\u0013zk\u06d4\u000e{\u0005fqtt\u0007)%\u0018v\u0019\\mpsk:\u0016s+h<\"\u0003r3>h#fj\"s\u0014i\u0010"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:19.559756",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "51.132.193.104",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61155,
+      "pattern": "[;&|`]",
+      "payload_hash": "d459c6cdf9ede00acdd4692105236159",
+      "payload_preview": "\u0017\u0003\u0003\u0000^\u001ese\u0016=|!c\u0014)7[3}\u0013\u0007b{\u001bye\u0012h\u0185n\u000f%~2\u0013zr\u0004%\u0005s\u0019u\u077c3\rte\u0445'mbd;\t"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:29.436875",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "142.250.82.211",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 3478,
+      "pattern": "[;&|`]",
+      "payload_hash": "50996733ff6701e728ae8ca43c163698",
+      "payload_preview": "\u0000\u0001\u0000d!\u0012bzyyvdtf88xs6\u0000\u0006\u0000!jpqlep7lpf0hmgokaaikyigciaqq:gqum\u0000\u0000\u0000w\u0000\u0004\u0000\u0001\u0000\n*\u0000\b62g\u0000$\u0000\u0004n}\u001e\u0000\b\u0000\u0014g\tx\"\b}h&]m7(\u0000\u0004\u0013h\u00199"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:44.551342",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "140.82.114.25",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "98b5212a050d5c8b077e8f00e7973b1d",
+      "payload_preview": "\u0017\u0003\u0003\u0000\u0018\u0014y\u0003(jz\u001b&\u001b~sy^a?f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:48.450629",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "142.250.82.211",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 60072,
+      "pattern": "[;&|`]",
+      "payload_hash": "a88d00f58e4ac6984b0b3f7b423c965b",
+      "payload_preview": "\u0001\u0001\u0000,!\u0012b05dupksod5cy\u0000 \u0000\b\u0000\u0001\u02fa\u0010=\u0000\u0000\b\u0000\u0014+-\u00136n\u0001*<|u8$(\u0000\u0004"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:51.046891",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "142.250.82.223",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 3478,
+      "pattern": "[;&|`]",
+      "payload_hash": "4288e05995f308803cd4318a8dea0e24",
+      "payload_preview": "\u0000\u0001\u0000d!\u0012bipcqpmpefigg\u0000\u0006\u0000!vyitbytulgbdpgokaaikyigciaqq:ditj\u0000\u0000\u0000w\u0000\u0004\u0000\u0001\u0000\n*\u0000\bhd'\u000b!\u0519\u0000$\u0000\u0004n}\u001e\u0000\b\u0000\u0014\n!\u001a\u02fd\u0201!df7<d(\u0000\u0004`t"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:36:53.381417",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "142.250.82.223",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 65282,
+      "pattern": "[;&|`]",
+      "payload_hash": "197d247e05770d0427fdbdb56792e2cf",
+      "payload_preview": "\u0001\u0001\u0000,!\u0012bipcqpmpefigg\u0000 \u0000\b\u0000\u0001\u0010\u0010=\u0000\u0000\b\u0000\u0014\u001dm\u0018%oj`\u0000z2-(\u0000\u0004m"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:37:36.750081",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "142.250.82.223",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 65282,
+      "pattern": "[;&|`]",
+      "payload_hash": "1a7aff241219393073fa01449c91e414",
+      "payload_preview": "\u0001\u0001\u0000,!\u0012bezkd9euitri9\u0000 \u0000\b\u0000\u0001\u0010\u0010=\u0000\u0000\b\u0000\u0014\u04c8\u000by\u0000|\u0012\u0002\u00053a\u0016(\u0000\u0004o"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:37:42.870778",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "140.82.114.25",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61117,
+      "pattern": "[;&|`]",
+      "payload_hash": "4cb44d78a81e48fd926911a3b38a4636",
+      "payload_preview": "\u0017\u0003\u0003\u0000\u0014\u0003c\u0005&r|<`\f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:37:51.794305",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "44.208.206.212",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "21c08c5b9a0d09df2a4247a23edb787f",
+      "payload_preview": "\u0016\u0003\u0001\u0007\u0001\u0000\u0007\u0003\u0003*/[btxzh~\bt\u0011vj6c\u0000 \u0018\u0002(\u001bryxcauk\u000e;\u0018\u007f\u0001hx\bi\u0000 zz\u0013\u0001\u0013\u0002\u0013\u0003+/,0\u0329\u0328\u0013\u0014\u0000\u0000\u0000/\u00005\u0001\u0000\u0007&\u0000\u0000\u0000\u001b\u0000\u0003\u0002\u0000\u0002\u0000+\u0000\u0007\u0006\u0003\u0004\u0003\u0003\u0000\u0005\u0000\u0005\u0001\u0000\u0000\u0000\u0000\u0000-\u0000\u0002\u0001\u0001d\u0000\u0005\u0000\u0003\u0002h2\u0001\u0000\u0001\u0000\r\u0000\u0000\u0000\u0001\u0000\u0001\u0000 f[7\u0011\u0014e%p\b\u0013\u062f\u0019c,\u000e1$.\u00001#'u}\u0016,*`\t\u007f\u0447\u0007\u07c2zk[e\u0019s\u060fy(c\".\u0013a\u001fy\u00011#\u0003\u08ab(yf~f(u!3n\u0007u\u0018_5\n\u001e"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:37:56.436603",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "44.208.206.212",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "a217b70d70448a105ee2ab9478b4551b",
+      "payload_preview": "}[,@\u0003n\u0015,w\u0001^'\b/w\u001e{\u0014$\u001bu$(\u0721m<\u0013@w?\u0006\u0002x/[\u0007\u0000\u063bxqb\u001ayzb.(u%y2p\u4ecep$q\u0013\u000edh7\u00064pd\u0015\u0006:g0\u0012\b]epm\u0011_7 5lmkq5hfaq@6\u0015\bb)\u050b'07v\uadce^r!1m\u0017\u07185\nbsx\u0017\rq$(qpm1m\u001ctf)\u000e\u0011w\u0592wi%igp\u0003i1u\u0006/q:hiw'(\u0131a\u0004j_\u0016-mni\u0092ov\u0006b\u0015\\ c]x@\u0019\u0006\u0019a&g\f\u0010/h{t\u0004m\u0017gh'\u0011\u03ca\u0000\udbeb\udc51rd\u0013b\u000e"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:37:59.771336",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "44.208.206.212",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61206,
+      "pattern": "[;&|`]",
+      "payload_hash": "b0d9dbe07711739d1df3b719f8b1f6ce",
+      "payload_preview": "\u0016\u0003\u0003\u0000l\u0002\u0000\u0000h\u0003\u0003\u0004\u001b<m]\t1dj\u00075jp{2 \b\u0013vtp\u000fge'?\u001f\u0014q>p\u001b0l\u0007/\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u000b\u0000\u0002\u0001\u0000\u0001\u0000\u0001\u0000\u0000\u0010\u0000\u0005\u0000\u0003\u0002h2\u0000#\u0000\u0000\u0000\u0017\u0000\u0000\u0016\u0003\u0003\u000e\u000b\u0000\u000e\u0000\u000e\u0000\u00050\u00050\u0004\u0521\u0003\u0002\u0001\u0002\u0002\u0010\u000e,\u007fv\u0004l1\u0011\u0002\u00000\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u00000<1\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u001c0\u001a\u0006\u0003u\u0004\u0003\u0013\u0013amazon rsa 2048 m030\u001e\u0017\r250501000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:01.327278",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "44.208.206.212",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61206,
+      "pattern": "[;&|`]",
+      "payload_hash": "35745a9d4ffaf44303e1f6f04c5eca64",
+      "payload_preview": "h*\u001d/z\u0005orj\n/\u0007.it@a\u0015+4\u0016\u017c#hdv\u001cd*\u000b/|:a3w\u0697\u0004sr:wdz\n\u04d5u\u0fcaci\u0011oi\u0001k\u0006#\u001c\u0503^\u0005cf\u067fz\u07b5\u0010;e\u0018s\u019ab\u04cen&\u0007\u0015b\u0082!;i@\u0002+\u0000\u0004b0\u0004^0\u0003f\u0003\u0002\u0001\u0002\u0002\u0013\u0007s\u0012l\u0006g\u001c)81y0\r\u0006\t*h\r\u0001\u0001\u000b\u0005\u0000091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u001e\u0017\r220823222604z"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:02.918749",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "44.208.206.212",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61206,
+      "pattern": "[;&|`]",
+      "payload_hash": "35a9360e24cf799ecf2ca7c1f8456d3e",
+      "payload_preview": ";09\u0006\u0003u\u0004\u0003\u00132starfield services root certificate authority - g20\u001e\u0017\r150525120000z\u0017\r371231010000z091\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u000f0\r\u0006\u0003u\u0004\n\u0013\u0006amazon1\u00190\u0017\u0006\u0003u\u0004\u0003\u0013\u0010amazon root ca 10\u0001\"0\r\u0006\t*h\r\u0001\u0001\u0001\u0005\u0000\u0003\u0001\u000f\u00000\u0001\n\u0002\u0001\u0001\u0000xqxqgpt}n\u05c8vhx!`t\u0001/\u0002-\u04e1cz"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:05.861468",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "44.208.206.212",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "e6e6a3653dd394d432f1b2c287f89af7",
+      "payload_preview": "\u0017\u0003\u0003\u0001o\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002l\u0005/nhzg8ffvd\u0005\nf;u#2\u0379\u0016\u000e[>w\t \\k\u0589[h\u0004\u027a\u000f\"\\q\u0006\u001ak\u000e)r\u001f7\u05272ondh}n92[t\u000b*}t\u0012\u0002jom\nd\u0005dtuv=\\\f\u001a@n?wj\u0000\u0000rn>hf^*\u06b7\u0014\\rzo[\u0004\u0002:\u001e}\u0000~\t\u06e2\u0010\n\u0015c4d]-\u000e\u0016\"om`n\u0013d$\f;\u001e/\u001a \u0015x\u0019\u001c.rcb\u001d%u\u0183\u007f}q`\u014dh\u0004x\u0011\u0010s)y\u001f\u04d179y\u0006f#\u0004\u0018fshv%2e,|\u0014md\u000104w\u0018y-5"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:07.486569",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "44.208.206.212",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "908bba7819457d6d09a18f3d04bf281d",
+      "payload_preview": "\u0017\u0003\u0003\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003ig]\b\u00145\u0014.a\b:p\u0713\u00199l\u001dwh,s\u001f&@\u01ccz$\t\u020fbit5\b\u0013n\"\ud8db\udf5anwk\u0019\u001b\u0019:\u0005\u0002qa3mzej\u0014p\u0006tk?agzxjpc\u0002\u0012\u0014hu\u0006\u0225 h\u0002'\u007fp\u0018\u000bs]um\fbwv\u007f\n\u001b\u018d\u0016d\"h*\u0011ckkw\u0015'\u0005ev2\u000b^\u000b\u07d8\nvt\u0005q\u0440'\u00139\"\f\u0007aiz\u0017>\u0013\u0018r\u001e*k\u001ao\u001ar\u0004\tt\u007f1\u001btti3lq\u02b0\u0005gwg)i\u000f11\u0018\u03ed\u0002r<}qs\u007fs\t?y\u0012\u0005\u001c\u001dc\n[2\u000ej\b\u0014"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:08.171741",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "44.208.206.212",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "ec8b22a9eb69082ecb6a08bbc9296bb8",
+      "payload_preview": ".:lz\u0017)yk\u000fci*^c\u0013\u0259\u001c\u0017;\u013e\u0019mvx[\u001cg\"ez\f,sb\tp\u001eo\u0014sn-zrda\tf<\u0012k\ft*-t\u0007x\u0001q\u059c\u071fpxtj\u0017\u024f\u001cy`ck\u001b?x:a\u0016r\"m:w\u0002g7\u001a)\r:hek`src\"\u0367l@n\u000f\u0012a\u000b\u0010\u0000h'm\u01ddm]f\u0007';:%h{\n#'*fk[\u03be"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:10.249964",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "44.208.206.212",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61206,
+      "pattern": "[;&|`]",
+      "payload_hash": "bdb5d53027a9335c1dc0c6e0b6237590",
+      "payload_preview": "\u0016\u0003\u0003\u0000\u0004\u0000\u0000\u0000\u0001q\u0000\u0001\u0002pu\tiq\u0015y\u0005\"\\\u000ff=\u0018\u001cq!w|\u0577lvy,\u0019ye\u000e}\u0018\u03be7:\u0015\u001e\u001b@4f4\u001b\u000b7'\n\u0014\u00022huai'\u0002m|[(k\tbss\u00031\",b\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001ey1o\u00110\u0225\u001bt\u001efv.\u027f\u001ef"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:11.552295",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "44.208.206.212",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61206,
+      "pattern": "[;&|`]",
+      "payload_hash": "84038bb009be86c49a2d9b6503d8f02f",
+      "payload_preview": "\u0017\u0003\u0003\u0001o\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003jf\u0006mzp\u03d1g\u0006:#7\u015bn]\u072f\u0300\u0014jugbs\u0001\u001cxo:og\rt\nf\u0000\u04f9n.\u07ca\u0249<6~&+5.xtn!,\u0011\u0006su,2&\u1145 %\u001d\u001f\u0019k!aan`\u001bl\u001dl/6\\d=!\u000fm\u06e6#%f(]2\u0007fe#>m\u0019\u0016\u0019!cz}q3q|i2@@66pg\nvav\u0017\u007f(:e{\b4?a!\u0016u\u001cwb'xok0/\u0016ygj5\u001bj\u0003y\u04fdj\u001ap\u0016a+yp\u0018ipc-c\t\u000ecbs@~,\u0014lg\u0006?\u0005-?b>ulr3"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:31.645922",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "142.250.82.223",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 65282,
+      "pattern": "[;&|`]",
+      "payload_hash": "b25ceb001fe508754e9467782c3c9b28",
+      "payload_preview": "\u0001\u0001\u0000,!\u0012bskcr/pz42s9p\u0000 \u0000\b\u0000\u0001\u0010\u0010=\u0000\u0000\b\u0000\u00140\u0000\u001d\u001d okz0/?\r|\b(\u0000\u0004\u000f%l"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:46.083264",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "040478a97728e2077ff2fab34bfdc780",
+      "payload_preview": "\u0016\u0003\u0003\u0000\u0001\u0000\u0000\u0003\u0003hy\u0019{\ue766+*%\"+\u0011\u03b3k\u0007\u0013\u001c<r\u00075\u0000\u0000&,+0/$#('\n\t\u0014\u0013\u0000\u0000\u0000=\u0000<\u00005\u0000/\u0000\n\u0001\u0000\u0000c\u0000\u0000\u0000\u0019\u0000\u0017\u0000\u0000\u0014activity.windows.com\u0000\u0005\u0000\u0005\u0001\u0000\u0000\u0000\u0000\u0000\n\u0000\b\u0000\u0006\u0000\u001d\u0000\u0017\u0000\u0018\u0000\u000b\u0000\u0002\u0001\u0000\u0000\r\u0000\u001a\u0000\u0018\b\u0004\b\u0005\b\u0006\u0004\u0001\u0005\u0001\u0002\u0001\u0004\u0003\u0005\u0003\u0002\u0003\u0002\u0002\u0006\u0001\u0006\u0003\u0000#\u0000\u0000\u0000\u0017\u0000\u0000\u0001\u0000\u0001\u0000"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:47.669008",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "de29d88dc4238a41868218e7732be634",
+      "payload_preview": "\u0016\u0003\u0003\u0018\u0002\u0000\u0000u\u0003\u0003hy\u0019z''\u0007\u0007}otifdowngrd\u0001 ;8\u0000\u0000^n i\u001em\u0014\r\ti_\u007f/\u001c0\u0000\u0000\r\u0000\u0005\u0000\u0000\u0000\u0017\u0000\u0000\u0001\u0000\u0001\u0000\u000b\u0000\u000f\u0000\u000f\u0000\t0\t0\u0007\u00a0\u0003\u0002\u0001\u0002\u0002\u00133\u0002\u0016id\u001a\u0000\u0000\u0002\u00160\r\u0006\t*h\r\u0001\u0001\f\u0005\u00000]1\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u001e0\u001c\u0006\u0003u\u0004\n\u0013\u0015microsoft corporation1.0,\u0006\u0003u\u0004\u0003\u0013%microsoft azure rsa tls issuing ca 0"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:51.442581",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "2eee63679ce32ae369e4af3c70c907fd",
+      "payload_preview": ".access.microsoft.com\u0015*.cdpcs.microsoft.com\u0014*.notify.windows.com\u001a*.ppe.activity.windows.com\u0017*.romeccs.microsoft.com\u0014activity.windows.com\u001acdpcs.access.microsoft.com\u0013cdpcs.microsoft.com\u0015romeccs.microsof"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:51.860204",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "d193e444130afddf0370c0eeba955a4b",
+      "payload_preview": "\u0001\u0001\u0005\u0000\u0003\u0002\u000f\u00000\u0002\n\u0002\u0002\u0001\u0000yly\u0000l \u1c61y\u0004w<q\u001f,v:c[\u0001|ubz\u001a\"m\u0011&p\u0006z,\u0003\u0012i@y?l\t]y{6\u0004e\u0356vzvy\u0000\tntd(\u001an{\u037c&p\u0007q50gl\u0010hv\f\u000e\u000b\u001d8pu'->4.\u07a2=')qw\u0018\u0002\u0014eo\u001b&mp\u0229r=\u001bzk0\u001f=\u001b6qdgc\u0793\u0012p\u0005\u000e~\u000b\u0004\u030fm`d\u000e\u007f\u000ek8\tw\u001a\u00f1\u022b/d6r\\\u0018-faloxq$0=ntd\"r[$e4\t\n9ee<\u0002\u0010\u05e4iwk42\u0013\u0019ld\u0013\u001c)or^"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:52.695135",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "b61a8cd565d68fafa0f4f1396589d49a",
+      "payload_preview": "eg8#yg \u0019@fyi\n'\f\u0007&\u02camx\u0017.\u001fd\u043f!+y\u000ew/.l0\u0015\t\u0001nk\t\u001bq\u00155\u0018-\ta|\u007f_w\u001cbm5r0~+b\u0014-7\u0010hx,[\u0019-\tn\u0013a\u0000k\u001b\u0003^\u0015\u0019ltnd*\u001d\u0017cw\u0011wzyx6d\u0005\fbr()z;= vop)@x}q\r-(\u001e{uyq\u0001\u0015|\u0005@0\u0005<0\u000580\u0003 \u0003\u0002\u0001\u0002\u0002\u00133\u0002h+\u001du[n\u0000\u0000\u0002h+\u001d0\r\u0006\t*h\r\u0001\u0001\f\u0005\u00000]1\u000b0\t\u0006\u0003u\u0004\u0006\u0013\u0002us1\u001e0\u001c\u0006\u0003u\u0004\n\u0013\u0015micr"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:54.533251",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "6ad300c02776d76dbbe73a2cc1343913",
+      "payload_preview": "})#om}h'bh\u0003`\u00d7\\x\u001d9\\xwejm\u0013zd(\u001d\u0003g!oodu\u000fqkh$\t{d\b\u0016)t\u001aa]\u000eu\u0017h   -\u0000a \u001bs\u001f\u0010:,~f\u0013<\u00fa\f\u0000\u0001i\u0003\u0000\u0018a\u0004d\u0004v[\u0013]a('\u0438 \u000b\u0012\u0007y7|:~|wa\n)^\u007fw\u007f\t-\u0005\u000eg\t\u000fr\fi\u0004z#y\u001a/\u001a\u02c5w9h\u05ec\\\b\u0004\u0001\u0000^u'e=w\u00ea\u0005d{\u0013tx12!\u008d.5\u03aeek\u000e1l5pm\u0011\b)\u0011aqr\u029e\u000b\u001c\"/_\u001c\u0003\u02b6l9\u000fa`i}sby\u0000y2oz\u00012-;\u001f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:55.692608",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "3e71133d76ed50c89bb70d9c1e1655ae",
+      "payload_preview": "\u0016\u0003\u0003\u0000m\u000b\u0000\u0000\u0003\u0000\u0000\u0000\u0010\u0000\u0000ba\u0004t<-#\u001es\u0010jv&t=tt\bkn\u0016\u0015>u1#\r\u0339sgr\\^ao\u000bd(\n\u0010\u02b52j\u0001\b\u000fp\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00001\u0007werqz/\u0001]yacx@k\r\u0013"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:57.761811",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "a16710bc465a3b9b7ae3b6f5fad19368",
+      "payload_preview": "\u0014\u0003\u0003\u0000\u0001\u0001\u0016\u0003\u0003\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000eho)s\u0012e[r\u0005i|!\fo5ob\u001ey"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:38:59.479246",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "83b89dc690d7910e7e16afc1d0ff55a9",
+      "payload_preview": "\u0017\u0003\u0003\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001,s='\u0012\u0017\u0445ind\u0011k6l6\u001b3*0+a\u050f(b4$yx~n0x\u030a\u0015q kj\u001ex\u0012m\r\u0014\u0351\u0318\u001e<\u0011tfd\u000b\ue4d1z\ti\u0509\u00ebv}j\u034fk\u0004\u0001g\blm)\\\u0005d<\u049b\u0002bjp\u0002a\reubb\u0010c\u0012m?xz\u0011d5=\u0007t\u001d\u001e\u0000gs\u00076wl\f@?~cu*yxoaa\u0013)*2q\u001e\u000f\u001ab\u0006`\u0006\u0002c;\u0013\u0014w\n{\f\rk0i\u001b%\u0003\u01abyokgzj\u00179y\u00138x\u0261\u000e\u0014\ue401?;sr)0st\u000er7\u0011\u0018i\u0014hf\u001c?,c&"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:01.156111",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "62e0e1475300dd901b3c3372e50c22c8",
+      "payload_preview": "ro<glx\u0018t%k4t\u001e\u000f4&,_dw8 hg$w=l\u0019\u0018t`\fty\rx\u0019u\u001b\u077e\u001a\uc1a9\u0013xki\u0451nvg9-\u001a0\\\u0011h\u046d\u001f\tp@,\u001fb\u0153fq,`a\u0013\u0018)\u64a33e|\u0000k:ff>jf\u000fi\u0213k\r\u0011v \u007f\u0001`\u0005h\u0019\u00014_z\u001b\u0010\u0002mf\u00135=@e\u0003.\rl|z\u000f`>(9x6bnt\u000fja-dy3\u02a9kzj\u0017\u001b\u001b\u03b7hixr\u7f42vl\u0001aj?i006\u000f\u0005uh@\u000fx\u0011&\u0019\u0249\u075dl\u0006va%dt;~z?\u04bb8\u0006#\b:|1gsvc?h\be"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:09.561405",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "81ccc10c8f353e5855e2aff154af2a9e",
+      "payload_preview": "\u0017\u0003\u0003\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002)\\'wy%)k\f\u0018mk\u000bk1y;m\u0014\u4e0bi\f\u06c2\u0001wr? \u0016\u000e\u001ce\u000e`t\u0003\u0019_v\u0001y\u0649\u0010\f\u0010kb?s\u0259k\r\f\u291f}o\u001bm#0m!{ownidljr\u0014)\u0012ko\u0017b\u000fk.\u0016\u000bn[0-\u0018\u0007mx\t[ae#h\u0016k|<\u0000cyw\ns4ldltt0\u0014\u000b.\u033f4}\b9]zplj\u03c21z\u000e\u0011q>jcu{\u0000-\u0007+\u00114z$gew\u0006\u0005b\u001e<z\ti|3ru\\\u0018oa3,pm\u0007\u0016z;`\u0012\u0117w:k\u00108a\u2d50et!\u0430\u0018"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:15.367045",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "9063392e6a2777107f7379bdcc73a91f",
+      "payload_preview": "/!}e\u0014\u0140\u0007\u05bf`nj\u000bk&\u02fdcp\u03c5\u0591\ru<\u007f\nap.q\u000b\u0006"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:20.819858",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "30e84dd4b7427bcba39db598af3c8be6",
+      "payload_preview": "\u0017\u0003\u0003\bf\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001f^\u001f\f\u0014hf\nq\u001f872-yi\u000fk\u0013\u06f4\u0017f6!quf+\u0015$wd[\u000bg\u03ce\ty}\u001bu=\u0001\u0019x2r{\u0564q&mj!<k\u0664\n0<o3=<\u0001\u0007d\u001bs'ly\u0000\u0015|\u0582 7\u000b,@s\u0011u&4\u00066\\\u0609\u0006|p?!~_a0f\u00106m\u0004e\u00163/\u0016r\u9fb6\u047d=hy[\u00064|\u0223\u01d2[el/kg{\ne\u001c\u001bhfj}=\u001br\r8\u0219.j9\u0014\rfcv\u00179\u0010\\:]ma\u0002u}\u02e2\u0014n{x\u007fm\u0017g#\\yh\u0016b9;(\u0004\u0014\u0011\u0003\u0014dm\u001c"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:25.539549",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "f1349e7b401e0a29e30954492df202e7",
+      "payload_preview": "\u0016~ed\u0662n\u0431.*j\u000b\u0016\u000bj(\u001f\fc\u04567me\u000bmk<w\u0005m^j?\u0016<\rd|waz!7u2zrg\u001d\\\u0013\f\u001d.\u0098kn\u0007z6(\u02c9$e\u0011p\u001axb\fnj\u0019\u000esfto\u00e1.\u001e\u000b9\u0002\u0010$\u0015#:6\\kfr\u0011r\u0003l^'\u001a9wxm-m:x}/5\u0015e7k2efo!\u0006y\u0015\tlvwyg[)\nm\u0013\u0017\u0017foxv\u001c\ba/6e#r\u0017w4a)\u007f7\u0003kr\u01e3ls/\bmw\u0006ltk\u001ac/\u0001u>je\u0012\u0012mu\u0018\u0016\u0003\u06ec4\u0015\"4h=5ms\u05d3 ^|.\u0012"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:30.410374",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "ddef8bec826e8763483e52103897157a",
+      "payload_preview": "\u0017\u0003\u0003\u0007{\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0011@\u0002t-\u0017\u0005\u41b0\u0295@)bum\u000ba\u000f!\u0019td\rb\u000e5of@vyx\u0017#\u0215g5\u0010'\u0000<y?e k\u00188=*\u001c&vv$f}[vb(a=`l;st\t>\u001b1+n\u0007o\u0004$\b\u0012\u0011a\u07d4|[+z\\t\u001d$\u001a\u0006:\f\\tzobsf\u37fc:\u0016\u0004]=)4`oe\u001f\u001a\u0004b:}hzm\rya)b, 8s6\u0015-\u0019g\u0523e\u001a5u{_\u000fafo5\u0015\r1w_k\u00106\u000f $\u0003h8\u0014\u0501_\u0006\u000eix\u001a\ue5afi]pi\r4\u0006bca\u0011c?o\u0013oa"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:32.777249",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "20.69.137.228",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 443,
+      "pattern": "[;&|`]",
+      "payload_hash": "3f246c3bf7916fe2c7db9fd41a5e9689",
+      "payload_preview": "\t<j\u0010q!!\u03bb1ti-\u0014^\r\u022bu\tj1yorakl!\u0012a\u0011\u68e1fd#=31\u0011\u0010#,:\u0016\u0140\b'_8n\u0018^6\u036by\u0012\u0000)\u0001ohp,b-\fn?d\u000f\u07bb]\u0013v\"gg1\u0013,&6\u013c\u001dg~\u0018$du\u0018\u0000\n\u0001\u0016\rm\t?\u0686]\u000en-v\u0019b\u0006f\uf9ae\u0001\\\u0010'y'r>h7d;ndz\u0001\u001aaq{jdj*_=hg\u03e7\u001bw7;\ry$\u000f!+\u0002'\u0011\u0188_kq`\u001c9objfos*h\u0010t,u!\u0001wkk,[7z5,\u001b\b@)\bup\u000f\u0006`\u0006\u001c<\foo:m\u001f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:35.918221",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "20.69.137.228",
+    "dst_ip": "192.168.29.78",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 61210,
+      "pattern": "[;&|`]",
+      "payload_hash": "9e6af9bf5b011ebb3c8e19fb192d6050",
+      "payload_preview": "\u0017\u0003\u0003\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002[m\b\u7fe3ll\u7094tx\f\u0004\u037e2>b\u0004k\t\u001d\u0010qy+\u5b82ja\u056f\b\b1x\u001a\u0017rsrwv\u00114\r-\u0002j1i\u000b\u0012|0fff\u066d@/\t3\u0000ubbf\u0007h\u0018\u0019\u0019\u0011cdb'\u000f=o\u0010]\u0001qd\u0017\u000082\u0002\u001a:y\u0000\u0015/qtwb oj/\u0012\u0001\u0010jws]r4m\u0012>*8q\u0017x\u007f1f}(\u001f\u0013\u049d-o\u028b|v2zd\u001cn\u0001\u0003+zilgvsa\u0371ke9,\u000e\r`x4ot+\u0018u%\u0011,p-q\u0017v\rddby75\"\u0011h+:\u0507j\nb9bk\u001f"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:39:49.726385",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "142.250.82.211",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 3478,
+      "pattern": "[;&|`]",
+      "payload_hash": "f9fb226212818213b10569a6c82e2d10",
+      "payload_preview": "\u0000\u0001\u0000d!\u0012ba5p+/tswge+h\u0000\u0006\u0000!jpqlep7lpf0hmgokaaikyigciaqq:gqum\u0000\u0000\u0000w\u0000\u0004\u0000\u0001\u0000\n*\u0000\b62g\u0000$\u0000\u0004n}\u001e\u0000\b\u0000\u0014%\u0007et\u007f|y=n$5t(\u0000\u0004&~:"
+    }
+  },
+  {
+    "timestamp": "2025-06-23T14:40:00.450955",
+    "alert_type": "Suspicious Payload - Command Injection",
+    "src_ip": "192.168.29.78",
+    "dst_ip": "142.250.82.223",
+    "severity": "HIGH",
+    "description": "Command Injection pattern detected in payload",
+    "metadata": {
+      "dst_port": 3478,
+      "pattern": "[;&|`]",
+      "payload_hash": "aa5649397d5794cbd2bbd4f9ec287ffe",
+      "payload_preview": "\u0000\u0001\u0000d!\u0012bni6kiaogluo+\u0000\u0006\u0000!vyitbytulgbdpgokaaikyigciaqq:ditj\u0000\u0000\u0000w\u0000\u0004\u0000\u0001\u0000\n*\u0000\bhd'\u000b!\u0519\u0000$\u0000\u0004n}\u001e\u0000\b\u0000\u0014\u0015a|mx\"?\"\uaeb5\u001d\u007f\bwz(\u0000\u00044"
+    }
   }
 ]

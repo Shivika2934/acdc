@@ -1211,3 +1211,4 @@
 2025-06-19 03:32:23,001 - CRITICAL - SECURITY ALERT: 100 suspicious events in 300s. Latest: modified - D:\acdc\network_analysis.json [MEDIUM]
 2025-06-19 03:32:23,094 - WARNING - SUSPICIOUS: modified - D:\acdc\security_monitor.db-journal [MEDIUM] - Process: python.exe
 2025-06-19 03:32:23,094 - CRITICAL - SECURITY ALERT: 100 suspicious events in 300s. Latest: modified - D:\acdc\security_monitor.db-journal [MEDIUM]
+2025-06-23 14:40:36,887 - ERROR - HTTP server error: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
