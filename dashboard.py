@@ -411,6 +411,45 @@ def cryptanalysis_console():
     return render_template('cryptanalysis.html', result=result)
 
 
+# --- NEW: Filter logs by level for dashboard buttons ---
+@app.route('/api/logs/<module>/filter')
+def get_filtered_logs(module):
+    """
+    Get logs for a module filtered by level (info, warning, error, critical, etc.)
+    Query param: level (case-insensitive, e.g. INFO, ERROR)
+    """
+    if module not in LOG_FILES:
+        return jsonify({'status': 'error', 'message': 'Invalid module'})
+    level = request.args.get('level', '').upper()
+    try:
+        log_file = LOG_FILES[module]
+        log_path = os.path.join(os.path.dirname(__file__), log_file['path'])
+        if not os.path.exists(log_path):
+            return jsonify({'logs': []})
+
+        logs = []
+        if log_file['type'] == 'json':
+            with open(log_path, 'r') as f:
+                entries = json.load(f)
+                for entry in entries[-1000:]:
+                    # Try to extract level from JSON entry
+                    if isinstance(entry, dict):
+                        entry_level = entry.get('event_type', entry.get('level', 'INFO')).upper()
+                        if not level or entry_level == level:
+                            logs.append(json.dumps(entry))
+        else:
+            with open(log_path, 'r') as f:
+                for line in f.readlines()[-1000:]:
+                    parsed = parse_log_entry(line.strip())
+                    entry_level = parsed.get('level', 'INFO').upper()
+                    if not level or entry_level == level:
+                        logs.append(parsed)
+        return jsonify({'logs': logs})
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)})
+
+# --- END NEW ---
+
 def signal_handler(sig, frame):
     """Handle graceful shutdown"""
     print("\nShutting down all modules...")

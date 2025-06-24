@@ -677,21 +677,8 @@
                     </div>
                     <div class="col-md-8">
                         <div class="d-flex justify-content-between align-items-center flex-wrap">
-                            <div class="filter-buttons">
-                                <button class="btn-filter active" onclick="filterLogLevel('all')">All Events</button>
-                                <button class="btn-filter" onclick="filterLogLevel('INFO')">
-                                    <i class="fas fa-info-circle me-1"></i>Info
-                                </button>
-                                <button class="btn-filter" onclick="filterLogLevel('WARNING')">
-                                    <i class="fas fa-exclamation-triangle me-1"></i>Warning
-                                </button>
-                                <button class="btn-filter" onclick="filterLogLevel('ERROR')">
-                                    <i class="fas fa-times-circle me-1"></i>Error
-                                </button>
-                                <button class="btn-filter" onclick="filterLogLevel('CRITICAL')">
-                                    <i class="fas fa-exclamation-circle me-1"></i>Critical
-                                </button>
-                            </div>
+                            <!-- Removed filter-buttons for All Events, Info, Warning, Error, Critical -->
+                            <div></div>
                             <div class="d-flex align-items-center gap-3">
                                 <button class="btn-filter" onclick="clearLogs()">
                                     <i class="fas fa-trash me-1"></i>Clear
@@ -828,6 +815,17 @@
                 .catch(error => {
                     container.innerHTML = `<div class="text-danger p-3">Failed to load logs: ${error}</div>`;
                 });
+        }
+
+        // Clear logs in the currently active tab
+        function clearLogs() {
+            const activeTab = document.querySelector('.nav-link.active');
+            if (!activeTab) return;
+            const module = activeTab.getAttribute('href').split('-')[0].substring(1);
+            const container = document.getElementById(`${module}-log-container`);
+            if (container) {
+                container.innerHTML = '<div class="text-center text-muted py-4"><i class="fas fa-trash fa-2x mb-2"></i><p>Logs cleared.</p></div>';
+            }
         }
 
         // Initialize
